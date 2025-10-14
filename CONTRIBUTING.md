@@ -30,7 +30,7 @@ This code of conduct applies both within project spaces and in public spaces
 when an individual is representing the project or its community.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior can be
-reported by emailing the organizers of the Energy Data Hackdays.
+reported by [emailing the organizers of the E-Collecting Hackathon](mailto:hackathon-bk@bfh.ch).
 
 This Code of Conduct is forked from the Energy Data Hackday's code of conduct which is itself 
 adapted from the [Contributor Covenant](https://contributor-covenant.org), version 3.0,
