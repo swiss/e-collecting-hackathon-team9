@@ -29,7 +29,7 @@
 
 ## Contributing
 
-Please read ... for details on our code of conduct and the process for submitting merge requests.
+Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of conduct and the process for submitting merge requests.
 
 ## Group Members
 
