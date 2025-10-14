@@ -1,0 +1,3 @@
+# E-Collecting Hackathon – Team 1
+
+...
