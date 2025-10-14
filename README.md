@@ -9,10 +9,9 @@
 > 5) Environment code to be run (if applicable)
 
 
+## Approach
 
-## Challenge
-
-*A brief description of your challenge.*
+*A brief description of your approach.*
 
 ## Getting Started
 
