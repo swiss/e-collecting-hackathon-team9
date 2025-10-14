@@ -1,12 +1,11 @@
 # Contributor Code of Conduct
 
 By contributing to this repository, you accept and agree to the following terms and
-conditions for your present and future contributions submitted to this repository:
+conditions for your contributions submitted to this repository:
 
-## Copyright
+## Copyright and License
 
-You reserve all right, title, and interest in and to your contributions.
-...
+insert https://bkdev.atlassian.net/wiki/x/LIB9c
 
 ## Developer's Certificate of Origin
 
