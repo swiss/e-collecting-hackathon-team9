@@ -87,4 +87,4 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 
 ## License
 
-This project is licensed under ... - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under MIT License - see the [LICENSE](LICENSE) file for details.
