@@ -1,37 +1,72 @@
 # Contributor Code of Conduct
 
-## Developer Certificate of Origin and License
-
 By contributing to this repository, you accept and agree to the following terms and
-conditions for your present and future contributions submitted to this repository.
-You reserve all right, title, and interest in and to your Contributions.
+conditions for your present and future contributions submitted to this repository:
 
-## Code of conduct
+## Copyright
 
-As contributors and maintainers of this project, we pledge to respect all people
-who contribute through reporting issues, posting feature requests, updating
-documentation, submitting merge requests or patches, and other activities.
+You reserve all right, title, and interest in and to your contributions.
+...
 
-We are committed to making participation in this project a harassment-free
-experience for everyone, regardless of level of experience, gender, gender
-identity and expression, sexual orientation, disability, personal appearance,
-body size, race, ethnicity, age, or religion.
+## Developer's Certificate of Origin
 
-Examples of unacceptable behavior by participants include the use of sexual
-language or imagery, derogatory comments or personal attacks, trolling, public
-or private harassment, insults, or other unprofessional conduct.
+By making a contribution to this project, I certify that:
 
-Project maintainers have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct. Project maintainers who do not follow the
-Code of Conduct may be removed from the project team.
+(a) The contribution was created in whole or in part by me and I
+    have the right to submit it under the open source license
+    indicated in the file; or
 
-This code of conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community.
+(b) The contribution is based upon previous work that, to the best
+    of my knowledge, is covered under an appropriate open source
+    license and I have the right under that license to submit that
+    work with modifications, whether created in whole or in part
+    by me, under the same open source license (unless I am
+    permitted to submit under a different license), as indicated
+    in the file; or
 
-Instances of abusive, harassing, or otherwise unacceptable behavior can be
-reported by [emailing the organizers of the E-Collecting Hackathon](mailto:hackathon-bk@bfh.ch).
+(c) The contribution was provided directly to me by some other
+    person who certified (a), (b) or (c) and I have not modified
+    it.
 
-This Code of Conduct is forked from the Energy Data Hackday's code of conduct which is itself 
-adapted from the [Contributor Covenant](https://contributor-covenant.org), version 3.0,
-available at [https://www.contributor-covenant.org/version/3/0/](https://www.contributor-covenant.org/version/3/0/).
+(d) I understand and agree that this project and the contribution
+    are public and that a record of the contribution (including all
+    personal information I submit with it, including my sign-off) is
+    maintained indefinitely and may be redistributed consistent with
+    this project or the open source license(s) involved.
+
+[Developer Certificate of Origin
+Version 1.1](https://developercertificate.org/)
+Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
+
+## Hack Code of Conduct
+
+Our hackathon is dedicated to providing a safe and comfortable environment and harassment-free experience for everyone, regardless of the following: 
+-	gender
+-	gender identity and expression
+-	age
+-	sexual orientation
+-	disability
+-	physical appearance
+-	body size
+-	race
+-	ethnicity
+-	nationality
+-	religion
+-	political views
+-	previous hackathon attendance or lack of
+-	computing experience or lack of
+-	chosen programming language or tech stack
+
+We do not tolerate harassment of hackathon participants in any form. Sexual language and imagery is not appropriate at any hackathon venue, this includes the following. 
+-	hacks
+-	talks, presentations, or demos
+-	workshops
+-	any parties associated to the hackathon
+-	social media
+-	any other online media
+
+Hackathon participants violating these rules may be sanctioned or expelled from the hackathon at the discretion of the hackathon organisers. 
+
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of hackathon staff immediately.
+
+The full Hack Code of Conduct can be found on [hackcodeofconduct.org](https://hackcodeofconduct.org/).
