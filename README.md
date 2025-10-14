@@ -13,6 +13,56 @@
 
 *A brief description of your approach.*
 
+## Architecture and Data Flows
+
+*Find below an example for an architecture and a data flow diagram*
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart LR
+ subgraph Bund["Bund"]
+        ECollect["E-Collecting System"]
+        BFS[("BFS & Adressdaten")]
+  end
+ subgraph OGD["OGD Plattform"]
+        VB[("Volksbegehren")]
+        Statistik[("Anonyme Statistik")]
+        SPA["SPA-Volksbegehren: Link auf VB"]
+  end
+ subgraph Kontrollsystem["Einwohnerkontrollsystem"]
+        EReg[("Einwohner-Register")]
+        UKontrolle[("Unterschriftenkontrolle")]
+        SReg[("Stimmregister")]
+  end
+ subgraph Gemeinde["Gemeinde / Amtsstelle"]
+        Kontrollsystem
+  end
+ subgraph EIDBox["E-ID Umgebung"]
+        EID["E-ID"]
+        Quittung["Quittung VC / Willensbekundung"]
+  end
+    Bevoelkerung(["Bevölkerung"]) -- "SEDEX eCH-Standard XYZ4" --> OGD
+    BK(["BK"]) -- "SEDEX eCH-Standard XYZ0" --> OGD
+    OGD -- "SEDEX eCH-Standard XYZ2" --> Statistik
+    OGD -- 3a --> Gemeinde
+    OGD -- 3b --> BK
+    OGD -- 3c --> Bevoelkerung
+    Gemeinde -- "SEDEX eCH-Standard XYZ1" --> ECollect
+    Gemeinde -- "SEDEX eCH-Standard XYZ3" --> ECollect
+    ECollect --> BFS
+    Buerger(["Bürgerin"]) --> EID & Quittung & Uebogen["Unterschriftenbogen (Papier)"]
+    EID -- 5c --> ECollect
+    Quittung -- 5d --> ECollect
+    Komitee(["Komitee"]) --> Uebogen
+    Komitee -- 6a --> Uebogen
+    Komitee -- 6b --> Gemeinde
+    Komitee -- 6c --> UebogenCert["Unterschriftenbogen (Papier) + Bescheinigung"]
+
+```
+
 ## Getting Started
 
 *These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.*
@@ -24,8 +74,6 @@
 ### Installation
 
 *A step by step series of examples that tell you how to get a development env running.*
-
-
 
 ## Contributing
 
