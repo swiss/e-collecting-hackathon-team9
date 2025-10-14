@@ -35,6 +35,7 @@ By making a contribution to this project, I certify that:
 
 [Developer Certificate of Origin
 Version 1.1](https://developercertificate.org/)
+
 Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
 
 ## Hack Code of Conduct
