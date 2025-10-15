@@ -18,49 +18,48 @@
 *Find below an example for an architecture and a data flow diagram*
 
 ```mermaid
----
-config:
-  layout: elk
----
-flowchart LR
- subgraph Bund["Bund"]
-        ECollect["E-Collecting System"]
-        BFS[("BFS & Adressdaten")]
-  end
- subgraph OGD["OGD Plattform"]
-        VB[("Volksbegehren")]
-        Statistik[("Anonyme Statistik")]
-        SPA["SPA-Volksbegehren: Link auf VB"]
-  end
- subgraph Kontrollsystem["Einwohnerkontrollsystem"]
-        EReg[("Einwohner-Register")]
-        UKontrolle[("Unterschriftenkontrolle")]
-        SReg[("Stimmregister")]
-  end
- subgraph Gemeinde["Gemeinde / Amtsstelle"]
-        Kontrollsystem
-  end
- subgraph EIDBox["E-ID Umgebung"]
-        EID["E-ID"]
-        Quittung["Quittung VC / Willensbekundung"]
-  end
-    Bevoelkerung(["Bevölkerung"]) -- "SEDEX eCH-Standard XYZ4" --> OGD
-    BK(["BK"]) -- "SEDEX eCH-Standard XYZ0" --> OGD
-    OGD -- "SEDEX eCH-Standard XYZ2" --> Statistik
-    OGD -- 3a --> Gemeinde
-    OGD -- 3b --> BK
-    OGD -- 3c --> Bevoelkerung
-    Gemeinde -- "SEDEX eCH-Standard XYZ1" --> ECollect
-    Gemeinde -- "SEDEX eCH-Standard XYZ3" --> ECollect
-    ECollect --> BFS
-    Buerger(["Bürgerin"]) --> EID & Quittung & Uebogen["Unterschriftenbogen (Papier)"]
-    EID -- 5c --> ECollect
-    Quittung -- 5d --> ECollect
-    Komitee(["Komitee"]) --> Uebogen
-    Komitee -- 6a --> Uebogen
-    Komitee -- 6b --> Gemeinde
-    Komitee -- 6c --> UebogenCert["Unterschriftenbogen (Papier) + Bescheinigung"]
 
+sequenceDiagram
+    actor Customer
+    participant WebApp as "Web App"
+    participant PaymentGateway as "Payment Gateway"
+    participant Database
+    participant EmailSrv as "Email Server"
+    participant Kitchen
+
+    Customer->>WebApp: Browse menu, select items
+    Customer->>WebApp: Place order, provide info
+    WebApp->>PaymentGateway: Request payment
+    PaymentGateway-->>WebApp: Payment success/failure
+    alt Payment success
+        WebApp->>Database: Store order
+        WebApp->>Kitchen: Send order details
+        WebApp->>EmailSrv: Send order confirmation
+        EmailSrv-->>Customer: Order confirmation email
+        Kitchen-->>Customer: Pizza prepared and delivered
+    else Payment failure
+        WebApp-->>Customer: Show payment failed
+    end
+
+```
+
+```mermaid
+flowchart TD
+    Customer["Customer"]
+    WebApp["Web App"]
+    PaymentGateway["Payment Gateway"]
+    Database["Order Database"]
+    EmailSrv["Email Server"]
+    Kitchen["Kitchen"]
+
+    Customer-->|Order & Payment Info|WebApp
+    WebApp-->|Payment Data|PaymentGateway
+    PaymentGateway-->|Payment Response|WebApp
+    WebApp-->|Order Data|Database
+    WebApp-->|Order Details|Kitchen
+    WebApp-->|Confirmation|EmailSrv
+    EmailSrv-->|Email|Customer
+    Kitchen-->|Status/Delivery|Customer
 ```
 
 ## Getting Started
