@@ -2,8 +2,8 @@
 
 > This hackathon contributes to laying out different ways on how to implement e-collecting in Switzerland. Proper documentation is key to ensuring that your solution can be understood and evaluated:
 >
-> 1) **[Mermaid](https://mermaid.js.org/) diagram(s)** showing interactions and data flowing between actors, software and infrastructure components of your solution
-> 2) Figma Mockups/wireframes and user flow showing the user experience of your solution
+> 1) **[Mermaid](https://mermaid.js.org/) diagram(s)** showing interactions and data flowing between actors, software and infrastructure components of your solution over time.
+> 2) Mockups/wireframes and user flow showing the user experience of your solution (using e.g. Figma)
 > 3) Explanation of features used (if applicable)
 > 4) A requirements file with all packages and versions used (if applicable)
 > 5) Environment code to be run (if applicable)
@@ -13,9 +13,13 @@
 
 *A brief description of your approach.*
 
-## Architecture and Data Flows
+## Diagrams
 
-*Find below an example for an architecture and a data flow diagram*
+*Find below an example for two diagrams showing interactions and data flowing between actors, software and infrastructure components of ordering a pizza via a third-party delivery website over time.*
+
+### Flowchart: High-level Order Process
+
+An overall process flow showing the main steps and system/actor interactions for ordering a pizza online via a delivery website, including software, infrastructure, and handoff to the restaurant and delivery driver.
 
 ```mermaid
 
@@ -40,6 +44,10 @@ flowchart TD
     DeliverySite-->|"Show Status"|Customer
 
 ```
+
+### Sequence Diagram: Detailed Interactions & Data Flows 
+
+A step-by-step illustration showing how data and requests are exchanged between actors (customer, delivery site, restaurant, infrastructure), and key software components in the order process.
 
 ```mermaid
 
