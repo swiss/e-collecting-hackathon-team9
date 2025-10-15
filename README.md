@@ -19,47 +19,53 @@
 
 ```mermaid
 
-sequenceDiagram
-    actor Customer
-    participant WebApp as "Web App"
-    participant PaymentGateway as "Payment Gateway"
-    participant Database
-    participant EmailSrv as "Email Server"
-    participant Kitchen
+flowchart TD
+    Customer([Customer])
+    DeliverySite("Delivery Website (Web/App)")
+    Backend("Website Backend Server")
+    OrderDB[(Order Database)]
+    Restaurant("Restaurant Order System")
+    Driver("Delivery Driver")
 
-    Customer->>WebApp: Browse menu, select items
-    Customer->>WebApp: Place order, provide info
-    WebApp->>PaymentGateway: Request payment
-    PaymentGateway-->>WebApp: Payment success/failure
-    alt Payment success
-        WebApp->>Database: Store order
-        WebApp->>Kitchen: Send order details
-        WebApp->>EmailSrv: Send order confirmation
-        EmailSrv-->>Customer: Order confirmation email
-        Kitchen-->>Customer: Pizza prepared and delivered
-    else Payment failure
-        WebApp-->>Customer: Show payment failed
-    end
+    Customer-->|"Place Order (Pizza+Details)"|DeliverySite
+    DeliverySite-->|"Send Order Data"|Backend
+    Backend-->|"Store Order"|OrderDB
+    Backend-->|"Send Order to Restaurant"|Restaurant
+    Restaurant-->|"Ack/Confirmation"|Backend
+    Backend-->|"Confirmation & ETA"|DeliverySite
+    DeliverySite-->|"Show Confirmation"|Customer
+    Restaurant-->|"Assign/Notify Delivery"|Driver
+    Driver-->|"Pickup & Deliver"|Customer
+    Driver-->|"Update Status"|DeliverySite
+    DeliverySite-->|"Show Status"|Customer
 
 ```
 
 ```mermaid
-flowchart TD
-    Customer["Customer"]
-    WebApp["Web App"]
-    PaymentGateway["Payment Gateway"]
-    Database["Order Database"]
-    EmailSrv["Email Server"]
-    Kitchen["Kitchen"]
 
-    Customer-->|Order & Payment Info|WebApp
-    WebApp-->|Payment Data|PaymentGateway
-    PaymentGateway-->|Payment Response|WebApp
-    WebApp-->|Order Data|Database
-    WebApp-->|Order Details|Kitchen
-    WebApp-->|Confirmation|EmailSrv
-    EmailSrv-->|Email|Customer
-    Kitchen-->|Status/Delivery|Customer
+sequenceDiagram
+    actor Customer
+    participant WebApp as "Delivery Website (UI)"
+    participant Backend as "Backend Server"
+    participant DB as "Order Database"
+    participant Restaurant as "Restaurant System"
+    actor Driver as "Delivery Driver"
+
+    Customer->>WebApp: Browse menu, select pizza (menu data)
+    Customer->>WebApp: Submit order (pizza, address, payment info)
+    WebApp->>Backend: Create order {pizza, address, payment}
+    Backend->>DB: Save order {orderId, customer, items, payment}
+    Backend->>Restaurant: API: send order {orderId, items, address}
+    Restaurant-->>Backend: Ack/Confirmation {orderId, ETA}
+    Backend-->>WebApp: Show confirmation {orderId, ETA}
+    WebApp-->>Customer: Order confirmation {orderId, ETA}
+    Restaurant->>Driver: Notify driver {pickup, delivery}
+    Driver-->>Restaurant: Pickup ack
+    Driver->>Customer: Deliver pizza
+    Driver->>Backend: Update status {orderId, delivered}
+    Backend->>WebApp: Status update {delivered}
+    WebApp->>Customer: Show status {delivered}
+
 ```
 
 ## Getting Started
