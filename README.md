@@ -17,7 +17,7 @@
 
 *Find below an example for two diagrams showing interactions and data flowing between actors, software and infrastructure components of ordering a pizza via a third-party delivery website over time.*
 
-### Flowchart: High-level Order Process
+### Flowchart: High-level Process
 
 An overall process flow showing the main steps and system/actor interactions for ordering a pizza online via a delivery website, including software, infrastructure, and handoff to the restaurant and delivery driver.
 
