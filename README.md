@@ -11,7 +11,7 @@
 *Together, you will contribute to comparing different ways of how to implement e-collecting in Switzerland from A to Z. As part of the [participatory process](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/partizipativer_prozess.html), your solutions will be discussed in subsequent workshops and will ultimately be taken into account for the official decision on which option to pursue as a pilot. Proper documentation is key to ensuring that your solution can be understood and evaluated:*
 
 1. **[Mermaid](https://mermaid.js.org/) diagram(s) showing interactions and data flows between actors, software and infrastructure components of your solution over time.**
-2. **Mockups/wireframes and user flow showing the user experience of different actors** (using e.g. Figma)
+2. **Wireframes or mockups with user flow showing the user experience of different actors** (using e.g. Figma)
 3. Explanation of features used (if applicable)
 4. A requirements file with all packages and versions used (if applicable)
 5. Environment code to be run (if applicable)
