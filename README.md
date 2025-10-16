@@ -1,4 +1,8 @@
-# E-Collecting Hackathon – Team 1
+# E-Collecting Hackathon – Team Title
+
+At the Federal Chancellery's E-Collecting Hackathon (October 31 and November 1, 2025, in Bern), we will design and develop solutions for collecting signatures for popular initiatives and referendums electronically. The links between the individual implementation options and the predefined topics (link to current white paper) are intended to facilitate political assessment within the framework of participatory dialogue and an official decision in light of the criteria mentioned. 
+
+The implementation options should show the extent to which and on the basis of which characteristics they address or counter the issues and challenges listed in the topics. The options should use possible user interfaces to present the user journey of the respective actors (namely voters, committees, voter registration authorities, Federal Chancellery), the overall architecture, syntax, and semantics of the data flows between the actors, as well as explanations and justifications for the design in as comprehensible manner. The implementation variants can be presented using clickable or technical prototypes developed at the hackathon.
 
 ## Approach
 
