@@ -1,27 +1,26 @@
 # E-Collecting Hackathon – Team Title
 
-At the Federal Chancellery's E-Collecting Hackathon (October 31 and November 1, 2025, in Bern), we will design and develop solutions for collecting signatures for popular initiatives and referendums electronically. The links between the individual implementation options and the predefined topics (link to current white paper) are intended to facilitate political assessment within the framework of participatory dialogue and an official decision in light of the criteria mentioned. 
-
-The implementation options should show the extent to which and on the basis of which characteristics they address or counter the issues and challenges listed in the topics. The options should use possible user interfaces to present the user journey of the respective actors (namely voters, committees, voter registration authorities, Federal Chancellery), the overall architecture, syntax, and semantics of the data flows between the actors, as well as explanations and justifications for the design in as comprehensible manner. The implementation variants can be presented using clickable or technical prototypes developed at the hackathon.
+*Over the course of two days, you will develop your solution for collecting electronic signatures for popular initiatives and referendums from A to Z, addressing the topics outlined in the white paper **(add link to updated version)**. Your prototype can be conceptual, clickable, or technical. Either way, you should clearly present the interactions and data flows between actors, software, and infrastructure components over time, as well as the user experience of these actors.*
 
 ## Approach
 
-*A brief description of your approach, a link to the detailed description of your approach and what you have already created (if applicable). Which skills do you need for your team?*
+*A brief description of your approach, a link/reference to the detailed description of your approach and what you have already created (if applicable). Which skills do you need for your team?*
 
-## Documentation
+## Documentation and Diagrams
 
-This hackathon contributes to laying out different ways on how to implement e-collecting in Switzerland. Proper documentation is key to ensuring that your solution can be understood and evaluated:
-1) **[Mermaid](https://mermaid.js.org/) diagram(s)** showing interactions and data flowing between actors, software and infrastructure components of your solution over time.
+*Together, you will contribute to comparing different ways of how to implement e-collecting in Switzerland from A to Z. As part of the [participatory process](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/partizipativer_prozess.html), your solutions will be discussed in subsequent workshops and will ultimately be taken into account for the official decision on which option to pursue as a pilot. Proper documentation is key to ensuring that your solution can be understood and evaluated.:*
+
+*1) **[Mermaid](https://mermaid.js.org/) diagram(s)** showing interactions and data flows between actors, software and infrastructure components of your solution over time.
 2) Mockups/wireframes and user flow showing the user experience of your solution (using e.g. Figma)
 3) Explanation of features used (if applicable)
 4) A requirements file with all packages and versions used (if applicable)
-5) Environment code to be run (if applicable)
+5) Environment code to be run (if applicable)*
 
 *For your reference, you will find below an example for two diagrams showing interactions and data flowing between actors, software and infrastructure components of ordering a pizza via a third-party delivery website over time.*
 
 ### Flowchart: High-level Process
 
-An overall process flow showing the main steps and system/actor interactions for ordering a pizza online via a delivery website, including software, infrastructure, and handoff to the restaurant and delivery driver.
+*An overall process flow showing the main steps and system/actor interactions for ordering a pizza online via a delivery website, including software, infrastructure, and handoff to the restaurant and delivery driver.*
 
 ```mermaid
 
@@ -49,7 +48,7 @@ flowchart TD
 
 ### Sequence Diagram: Detailed Interactions & Data Flows 
 
-A step-by-step illustration showing how data and requests are exchanged between actors (customer, delivery site, restaurant, infrastructure), and key software components in the order process.
+*A step-by-step illustration showing how data and requests are exchanged between actors (customer, delivery site, restaurant, infrastructure), and key software components in the order process.*
 
 ```mermaid
 
