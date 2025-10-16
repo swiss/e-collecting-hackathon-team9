@@ -16,9 +16,11 @@
 4. A requirements file with all packages and versions used (if applicable)
 5. Environment code to be run (if applicable)
 
+### Examples
+
 *For your reference, you will find below an example for two diagrams showing interactions and data flowing between actors, software and infrastructure components of ordering a pizza via a third-party delivery website over time. Please replace them with diagrams for your solution.*
 
-### Flowchart: High-level Process
+#### Flowchart: High-level Process
 
 *An overall process flow showing the main steps and system/actor interactions for ordering a pizza online via a delivery website, including software, infrastructure, and handoff to the restaurant and delivery driver.*
 
@@ -46,7 +48,7 @@ flowchart TD
 
 ```
 
-### Sequence Diagram: Detailed Interactions & Data Flows 
+#### Sequence Diagram: Detailed Interactions & Data Flows 
 
 *A step-by-step illustration showing how data and requests are exchanged between actors (customer, delivery site, restaurant, infrastructure), and key software components in the order process.*
 
@@ -76,6 +78,10 @@ sequenceDiagram
     WebApp->>Customer: Show status {delivered}
 
 ```
+
+#### UX?
+
+...
 
 ## Getting Started
 
