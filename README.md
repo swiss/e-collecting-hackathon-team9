@@ -98,4 +98,4 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 
 ## License
 
-This software is licensed under a GPL 3.0 License - see the [LICENSE](LICENSE) file for details. Please feel free to choose any other [Open Source Initiative approved license](https://opensource.org/licenses) (e.g. a more permissive license such as [MIT](https://opensource.org/license/mit)). Other content (e.g. texts, images, etc.) are licensed under a [Creative Commons CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.de). Justified exceptions are possible in consultation with the organizers.
+This software is licensed under a GPL 3.0 License - see the [LICENSE](LICENSE) file for details. Please feel free to choose any other [Open Source Initiative approved license](https://opensource.org/licenses) (e.g. a permissive license such as [MIT](https://opensource.org/license/mit)). Other content (e.g. texts, images, etc.) is licensed under a [Creative Commons CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.de). Justified exceptions are possible in consultation with the organizers.
