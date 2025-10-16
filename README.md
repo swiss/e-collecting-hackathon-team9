@@ -79,7 +79,7 @@ sequenceDiagram
 
 ```
 
-#### UX?
+#### User Experience
 
 ...
 
