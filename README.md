@@ -84,7 +84,7 @@ sequenceDiagram
 
 ## Getting Started
 
-*These instructions will get you a copy of the technical prototype (if applicable) up and running on your local machine for development and testing purposes. **If you are not developing a technical prototype, please present or reference your conceptual or clickable prototype.***
+*These instructions will get you a copy of the technical prototype (if applicable) up and running on your local machine for development and testing purposes. **If you are not developing a technical prototype, please present or reference your conceptual and/or clickable prototype.***
 
 ### Prerequisites
 
