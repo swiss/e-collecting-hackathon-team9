@@ -4,7 +4,7 @@
 
 ## Approach
 
-*A brief description of your approach, a link/reference to the detailed description of your approach and what you have already created (if applicable). Please also mention which skills do you need for your team.*
+*A brief description of your approach, a link/reference to the detailed description of your approach and what you have already created (if applicable). Please also mention which skills you need for your team.*
 
 ## Documentation and Diagrams
 
