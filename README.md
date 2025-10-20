@@ -124,7 +124,7 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 
 ## Team Members
 
-- Name/GitHub Account (role)
+- Marco Loppacher/GitHub Account (role)
 - Name/GitHub Account (role)
 - Name/GitHub Account (role)
 - ...
