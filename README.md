@@ -34,17 +34,17 @@ flowchart TD
     Restaurant("Restaurant Order System")
     Driver("Delivery Driver")
 
-    Customer-->|"Place Order (Pizza+Details)"|DeliverySite
-    DeliverySite-->|"Send Order Data"|Backend
-    Backend-->|"Store Order"|OrderDB
-    Backend-->|"Send Order to Restaurant"|Restaurant
-    Restaurant-->|"Ack/Confirmation"|Backend
-    Backend-->|"Confirmation & ETA"|DeliverySite
-    DeliverySite-->|"Show Confirmation"|Customer
-    Restaurant-->|"Assign/Notify Delivery"|Driver
-    Driver-->|"Pickup & Deliver"|Customer
-    Driver-->|"Update Status"|DeliverySite
-    DeliverySite-->|"Show Status"|Customer
+   Customer-->|"1 Place Order (Pizza+Details)"|DeliverySite
+   DeliverySite-->|"2 Send Order Data"|Backend
+   Backend-->|"3 Store Order"|OrderDB
+   Backend-->|"4 Send Order to Restaurant"|Restaurant
+   Restaurant-->|"5 Ack/Confirmation"|Backend
+   Backend-->|"6 Confirmation & ETA"|DeliverySite
+   DeliverySite-->|"7 Show Confirmation"|Customer
+   Restaurant-->|"8 Assign/Notify Delivery"|Driver
+   Driver-->|"9 Pickup & Deliver"|Customer
+   Driver-->|"10 Update Status"|DeliverySite
+   DeliverySite-->|"11 Show Status"|Customer
 
 ```
 
