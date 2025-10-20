@@ -12,7 +12,7 @@
 
 1. **[Mermaid](https://mermaid.js.org/) diagram(s) showing interactions and data flows between actors, software and infrastructure components of your solution over time.**
 2. **Wireframes or mockups with user flow showing the user experience of different actors** (using e.g. Figma)
-3. List how your addressed the topics presented in the **guidelines LINK** via the template below.
+3. Explain how you addressed the topics presented in the **guidelines LINK**, filling in the template below.
 4. List the key strengths and weaknesses of your solution.
 5. Explanation of features used (if applicable)
 6. A requirements file with all packages and versions used (if applicable)
@@ -83,17 +83,27 @@ sequenceDiagram
 
 *Add or reference wireframes or mockups with user flow showing the user experience of different actors.*
 
-# Topics addressed
+## Topics addressed
 
-Topic | (How) is it addressed?
-...
+*Explain how you addressed the topics presented in the **guidelines LINK**, filling in the template below.*
+
+| Topic | (How) is it addressed? |
+| -| ------- |
+| 1 |  |
+| 2 |  |
+| 3 |  |
+| ... |  |
 
 ## Key Strenghts and Weaknesses
 
-Strengths:
+*List the key strengths and weaknesses of your solution.*
+
+### Strengths:
+- ...
 - ...
 
-Weaknesses:
+### Weaknesses:
+- ...
 - ...
 
 ## Getting Started
