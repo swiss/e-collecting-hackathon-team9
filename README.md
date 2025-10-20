@@ -1,4 +1,4 @@
-# E-Collecting Hackathon – Team Title
+# E-Collecting Hackathon – 1 Voll-medienbruchfreies E-Collecting: direkte  Demokratie im digitalen Zeitalter
 
 *Over the course of two days, you will develop your solution for collecting electronic signatures for popular initiatives and referendums from A to Z, addressing the **10** topics outlined in the guidelines **(add link to updated version)**. Your prototype can be conceptual, clickable, and/or technical. Either way, you should clearly present the interactions and data flows between actors, software, and infrastructure components over time, as well as the user experience of these actors.*
 
