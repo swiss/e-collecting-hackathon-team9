@@ -1,91 +1,32 @@
-# 9) Kryptographie, verteiltes System, E-ID Vertrauensinfrastruktur
-
-*Over the course of two days, you will develop your solution for collecting electronic signatures for popular initiatives and referendums from A to Z, addressing the 10 topics outlined in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html). Your prototype can be conceptual, clickable, and/or technical. Either way, you should clearly present the interactions and data flows between actors, software, and infrastructure components over time, as well as the user experience of these actors.*
+# 9) Prosignum - sicher und verifizierbare Unterschriftensammlung 
 
 ## Approach
+Prosignum ist ein **föderal funktionsfähiges, datenschutzwahrendes und kryptografisch verifizierbares System zur elektronischen Unterschriftensammlung**. 
+Es kann parallel zum Papierkanal betrieben werden.
+Wir legen dabei besonderen Wert auf Sicherheit, Privatsphäre, Verifizierbarkeit, und föderale Anschlussfähigkeit. 
 
-*A brief description of your approach, a link/reference to the detailed description of your approach and what you have already created (if applicable). Please also mention which skills you need for your team.*
+### **Gesuchte Ergänzungen fürs Team**
+ Um den Ansatz zu stärken, suchen wir Unterstützung vor allem in nicht-technischen Bereichen:
+-   **Politisches und staatsrechtliches Know-how** – sowie Wissen zu direktdemokratischen Verfahren, Bundesrecht, Politische Rechte, und institutionellen Abläufen.    
+- **User Experience / Accessibility** - Unterstützung in Benutzerfreundlichkeit und Barrierefreiheit.
+-   **Kenntnisse der E-ID-Infrastruktur** – technische und organisatorische Einbindung der nationalen E-ID sowie der föderalen Stimmregistersysteme.
+-   **Verwaltungs- und Prozesswissen** – Verständnis für föderale Zuständigkeiten, Abläufe auf Gemeinde- und Kantonsebene sowie Schnittstellen zu bestehenden IT-Systemen (z. B. AGOV, allfällige kantonsspezifische Infrastruktur).
 
 ## Documentation and Diagrams
+`TODO`
 
-*Together, you will contribute to comparing different ways of how to implement e-collecting in Switzerland from A to Z. As part of the [participatory process](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/partizipativer_prozess.html), your solutions will be discussed in subsequent workshops and will possibly be taken into account for the official decision on the design of the federal e-collecting trials. Proper documentation is key to ensuring that your solution can be understood and evaluated:*
+### Flowchart: High-level Process
+`TODO`
 
-1. **[Mermaid](https://mermaid.js.org/) diagram(s) showing interactions and data flows between actors, software and infrastructure components of your solution over time.**
-2. **Wireframes or mockups with user flow showing the user experience of different actors** (using e.g. Figma)
-3. Explain how you addressed the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html), filling in the template below.
-4. List the key strengths and weaknesses of your solution.
-5. Explanation of features used (if applicable)
-6. A requirements file with all packages and versions used (if applicable)
-7. Environment code to be run (if applicable)
-
-*For your reference, you will find below an example of two diagrams showing interactions and data flows between actors, software and infrastructure components of ordering a pizza via a third-party delivery website over time. Please replace them with diagrams for your solution.*
-
-### Flowchart: High-level Process (Example)
-
-*An overall process flow showing the main steps and system/actor interactions for ordering a pizza online via a delivery website, including software, infrastructure, and handoff to the restaurant and delivery driver.*
-
-```mermaid
-
-flowchart TD
-    Customer([Customer])
-    DeliverySite("Delivery Website (Web/App)")
-    Backend("Website Backend Server")
-    OrderDB[(Order Database)]
-    Restaurant("Restaurant Order System")
-    Driver("Delivery Driver")
-
-   Customer-->|"1 Place Order (Pizza+Details)"|DeliverySite
-   DeliverySite-->|"2 Send Order Data"|Backend
-   Backend-->|"3 Store Order"|OrderDB
-   Backend-->|"4 Send Order to Restaurant"|Restaurant
-   Restaurant-->|"5 Ack/Confirmation"|Backend
-   Backend-->|"6 Confirmation & ETA"|DeliverySite
-   DeliverySite-->|"7 Show Confirmation"|Customer
-   Restaurant-->|"8 Assign/Notify Delivery"|Driver
-   Driver-->|"9 Pickup & Deliver"|Customer
-   Driver-->|"10 Update Status"|DeliverySite
-   DeliverySite-->|"11 Show Status"|Customer
-
-```
-
-### Sequence Diagram: Detailed Interactions & Data Flows (Example)
-
-*A step-by-step illustration showing how data and requests are exchanged between actors (customer, delivery site, restaurant, infrastructure), and key software components in the order process.*
-
-```mermaid
-
-sequenceDiagram
-    actor Customer
-    participant WebApp as "Delivery Website (UI)"
-    participant Backend as "Backend Server"
-    participant DB as "Order Database"
-    participant Restaurant as "Restaurant System"
-    actor Driver as "Delivery Driver"
-
-    Customer->>WebApp: Browse menu, select pizza (menu data)
-    Customer->>WebApp: Submit order (pizza, address, payment info)
-    WebApp->>Backend: Create order {pizza, address, payment}
-    Backend->>DB: Save order {orderId, customer, items, payment}
-    Backend->>Restaurant: API: send order {orderId, items, address}
-    Restaurant-->>Backend: Ack/Confirmation {orderId, ETA}
-    Backend-->>WebApp: Show confirmation {orderId, ETA}
-    WebApp-->>Customer: Order confirmation {orderId, ETA}
-    Restaurant->>Driver: Notify driver {pickup, delivery}
-    Driver-->>Restaurant: Pickup ack
-    Driver->>Customer: Deliver pizza
-    Driver->>Backend: Update status {orderId, delivered}
-    Backend->>WebApp: Status update {delivered}
-    WebApp->>Customer: Show status {delivered}
-
-```
+### Sequence Diagram: Detailed Interactions & Data Flows 
+`TODO`
 
 ## User Experience
-
-*Add or reference wireframes or mockups with user flow showing the user experience of different actors.*
+`TODO`
 
 ## Topics addressed
-
-*Explain how you addressed the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html), filling in the template below.*
+`TODO`
+The following table discusses the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html).*
 
 | Topic | (How) is it addressed? |
 | -| ------- |
@@ -95,8 +36,7 @@ sequenceDiagram
 | ... |  |
 
 ## Key Strenghts and Weaknesses
-
-*List the key strengths and weaknesses of your solution.*
+`TODO`
 
 ### Strengths:
 - ...
@@ -107,6 +47,7 @@ sequenceDiagram
 - ...
 
 ## Getting Started
+`TODO`
 
 *These instructions will get you a copy of the technical prototype (if applicable) up and running on your local machine for development and testing purposes. **If you are not developing a technical prototype, please present or reference your conceptual and/or clickable prototype.***
 
@@ -124,10 +65,10 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 
 ## Team Members
 
-- Christian Killer/GitHub Account (role)
-- Name/GitHub Account (role)
-- Name/GitHub Account (role)
-- ...
+- Christian Killer / [acuraster](https://github.com/acuraster) (Team-Co-Lead)
+- Alessandro de Carli / [dcale](https://github.com/dcale) (Team-Co-Lead)
+- Andreas Gassmann / [AndreasGassmann](https://github.com/AndreasGassmann) (Fullstack Dev)
+- Lukas Schönbächler / `TODO` (Fullstack Dev) 
 
 ## License
 
