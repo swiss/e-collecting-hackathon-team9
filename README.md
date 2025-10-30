@@ -68,7 +68,8 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 - Christian Killer / [acuraster](https://github.com/acuraster) (Team-Co-Lead)
 - Alessandro de Carli / [dcale](https://github.com/dcale) (Team-Co-Lead)
 - Andreas Gassmann / [AndreasGassmann](https://github.com/AndreasGassmann) (Fullstack Dev)
-- Lukas Schönbächler / `TODO` (Fullstack Dev) 
+- Lukas Schönbächler / `TODO` (Fullstack Dev)
+- ...
 
 ## License
 
