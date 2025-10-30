@@ -5,6 +5,44 @@ Prosignum ist ein **föderal funktionsfähiges, datenschutzwahrendes und kryptog
 Es kann parallel zum Papierkanal betrieben werden.
 Wir legen dabei besonderen Wert auf Sicherheit, Privatsphäre, Verifizierbarkeit, und föderale Anschlussfähigkeit. 
 
+### Designprinzipien
+- **Sicherheitsorientiertes Design**: Wir möchten jeden Schritt auf Bedrohungen analysieren und diese bewusst dokumentieren, damit Trade-offs, Vertrauensannahmen sowie Vertrauensgrenzen klar dokumentiert sind.
+- **Einfache Implementierbarkeit**: Wir möchten das Verfahren bewusst so konzipieren, dass es ohne hohe organisatorische oder technologische Hürden von allen wichtigen Stakeholdern implementiert werden kann.
+- **Mehrstufiger, evolutionärer Ansatz**: Wir schlagen vor, dass in den ersten Iterationen des digitalen Systems möglichst wenig Komplexität (z.B. etablierte statt experimenteller, nicht formell verifizierte, Kryptographie) verwendet wird. Vor allem, da ein Ansatz mit Differential Privacy (z.B. dass die Bundeskanzlei nur noch aggregierte Resultate erhalten würde) gewisse Gesetzesänderungen voraussetzt. Wir fokussieren uns im Hackathon daher auf eine jetzt sinnvolle und möglichst sichere Umsetzung. Die Evolutionsschritte werden im folgenden Abschnitt dargestellt.
+
+### Evolutionäre Entwicklung der Prosignum-Implementierung
+Die folgenden Phasen skizzieren wie eine schrittweise Weiterentwicklung des E-Collecting-Systems aussehen könnte. Die Erfahrungen und Ergebnisse jeder Phase würden dabei direkt in die Gestaltung der nachfolgenden Phasen einfliessen. Ob und wie genau diese Phasen durchlaufen werden, lässt sich derzeit nicht abschließend beurteilen.
+
+**Für den Hackathon fokussieren wir uns auf Phase 1, entwickeln gegebenenfalls aber bereits Ansätze für spätere Phasen.**
+
+#### **Phase 1: Pragmatischer Datenschutz**
+- **Fokus**: Organisatorische Sicherheit und funktionale Grundlagen ohne komplexe Kryptographie
+- **Features**:
+  - E-ID Integration für sichere Authentifizierung
+  - Digitale Signierung der Unterstützungsbekundung
+  - Parallelbetrieb mit Papierkanal
+  - Einfache Verifizierung durch Stimmregister
+- **Vorteile**: Schnelle Einführung, geringe technische Hürden für Gemeinden
+
+#### **Phase 2: Erweiterte Sicherheit**
+- **Fokus**: Verbesserte kryptografische Verfahren
+- **Potenzielle Features**:
+  - Zero-Knowledge-Proofs (ZKP) für Stimmberechtigung
+  - Verteilte Verifizierung durch mehrere Stimmregister
+  - Anonymisierte Zwischenstände
+  - Post-Quantum-sichere Kryptographieverfahren
+
+#### **Phase 3: Vollständige Privacy-Implementierung**
+- **Fokus**: Maximaler Datenschutz mit Differential Privacy
+- **Potenzielle Features**:
+  - Homomorphe Verschlüsselung der Unterstützungsbekundungen
+  - Bundeskanzlei erhält nur aggregierte, anonymisierte Resultate
+  - Vollständig verteiltes System ohne Vertrauen in zentrale Instanzen
+  - Möglicher Verzicht auf Papierkanal
+- **Voraussetzung**: Gesetzesanpassungen, umfassende technische Infrastruktur
+
+Jede Phase baut auf den Erfahrungen der vorherigen auf und ermöglicht ein iteratives Vorgehen mit kontinuierlicher Verbesserung.
+
 ### **Gesuchte Ergänzungen fürs Team**
  Um den Ansatz zu stärken, suchen wir Unterstützung vor allem in nicht-technischen Bereichen:
 -   **Politisches und staatsrechtliches Know-how** – sowie Wissen zu direktdemokratischen Verfahren, Bundesrecht, Politische Rechte, und institutionellen Abläufen.    
@@ -70,7 +108,11 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 - Andreas Gassmann / [AndreasGassmann](https://github.com/AndreasGassmann) (Fullstack Dev)
 - Lukas Schönbächler / `TODO` (Fullstack Dev)
 - ...
+- ...
 
 ## License
 
 This software is licensed under a AGPL 3.0 License - see the [LICENSE](LICENSE) file for details. Please feel free to [choose any other](https://choosealicense.com/) [Open Source Initiative approved license](https://opensource.org/licenses) (e.g. a permissive license such as [MIT](https://opensource.org/license/mit)). Other content (e.g. text, images, etc.) is licensed under a [Creative Commons CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.de). Exceptions are possible in consultation with the organizers.
+
+
+
