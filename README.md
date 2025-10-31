@@ -105,10 +105,11 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 
 - Christian Killer / [acuraster](https://github.com/acuraster) (Team-Co-Lead)
 - Alessandro de Carli / [dcale](https://github.com/dcale) (Team-Co-Lead)
-- Andreas Gassmann / [AndreasGassmann](https://github.com/AndreasGassmann) (Fullstack Dev)
-- Lukas Schönbächler / `TODO` (Fullstack Dev)
-- ...
-- ...
+- Andreas Gassmann / [AndreasGassmann](https://github.com/AndreasGassmann) 
+- Lukas Schönbächler / [lukeisontheroad](https://github.com/lukeisontheroad)
+- Michelle Fund / [michellefund](https://github.com/michellefund) 
+- William Dan / [william-dan](https://github.com/william-dan)
+- Hao Wang / [haowangcoder](https://github.com/haowangcoder)
 
 ## License
 
