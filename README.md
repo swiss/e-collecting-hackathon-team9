@@ -65,18 +65,18 @@ Jede Phase baut auf den Erfahrungen der vorherigen auf und ermöglicht ein itera
 ## Topics addressed
 The following table discusses the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html).*
 
-| Topic | (How) is it addressed? |
-| -| ------- |
-| 1 | PC Website URL, Mobile App QR code, and Paper with QR code provide three entry points. |
-| 2 | Encrypted DB stores "Committees: Initiative → vote counts" with connections to Federal Chancellor and Municipality, enabling access to signature counts. |
-| 3 | Database explicitly tracks "Committees: Initiative → vote counts", showing attribution of signatures to committees. |
-| 4 |  |
-| 5 | Swiyu E-ID Login provides authentication. Municipality performs "manual signature check / deduplication" step before returning data to DB. |
-| 6 |  |
-| 7 | Encrypted DB is used for data storage. |
-| 8 | Paper with QR code is included as one of three input channels alongside digital options (PC Website, Mobile App). |
-| 9 | Municipality has "Adapter for Electronic Rolls" allowing integration with existing systems. Manual signature check/deduplication supports municipalities without advanced systems. |
-| 10 |  |
+| Topic | Title (DE/EN) | (How) is it addressed? |
+| -| ------------- | ------- |
+| 1 | **Vom Unterstützungswillen zur Unterstützungsbekundung** / From the Will to Support to the Declaration of Support | PC Website URL, Mobile App QR code, and Paper with QR code provide three entry points. |
+| 2 | **Zugang zu aktuellen Informationen über die eingereichten Unterstützungsbekundungen** / Access to Current Information on Submitted Declarations of Support | Encrypted DB stores "Committees: Initiative → vote counts" with connections to Federal Chancellor and Municipality, enabling access to signature counts. |
+| 3 | **Zuschreibung der Unterstützungsbekundungen an Komitees und Sammelunternehmen** / Attribution of Declarations of Support to Committees and Collection Companies | Database explicitly tracks "Committees: Initiative → vote counts", showing attribution of signatures to committees. |
+| 4 | **Unterbreitung von Argumenten der Komitees via E-Collecting** / Submission of Committee Arguments via E-Collecting |  |
+| 5 | **Ausschluss unrechtmässiger Unterstützungsbekundungen** / Exclusion of Unlawful Declarations of Support | Swiyu E-ID Login provides authentication. Municipality performs "manual signature check / deduplication" step before returning data to DB. |
+| 6 | **Verhinderung unterschlagener Unterstützungsbekundungen** / Prevention of Embezzled Declarations of Support |  |
+| 7 | **Wahrung des Stimmgeheimnisses** / Protection of Voting Secrecy | Encrypted DB is used for data storage. |
+| 8 | **Integration mit dem papierbasierten Prozess** / Integration with the Paper-Based Process | Paper with QR code is included as one of three input channels alongside digital options (PC Website, Mobile App). |
+| 9 | **Erleichterte Einführung für Gemeinden mit Effizienzgewinn; auf der Grundlage von bestehender Infrastruktur und bestehenden Prozessen** / Facilitated Introduction for Municipalities with Efficiency Gains; Based on Existing Infrastructure and Processes | Municipality has "Adapter for Electronic Rolls" allowing integration with existing systems. Manual signature check/deduplication supports municipalities without advanced systems. |
+| 10 | **E-Collecting für alle föderalen Ebenen** / E-Collecting for All Federal Levels |  |
 
 ## Key Strenghts and Weaknesses
 `TODO`
