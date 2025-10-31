@@ -63,15 +63,20 @@ Jede Phase baut auf den Erfahrungen der vorherigen auf und ermöglicht ein itera
 `TODO`
 
 ## Topics addressed
-`TODO`
 The following table discusses the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html).*
 
 | Topic | (How) is it addressed? |
 | -| ------- |
-| 1 |  |
-| 2 |  |
-| 3 |  |
-| ... |  |
+| 1 | PC Website URL, Mobile App QR code, and Paper with QR code provide three entry points. |
+| 2 | Encrypted DB stores "Committees: Initiative → vote counts" with connections to Federal Chancellor and Municipality, enabling access to signature counts. |
+| 3 | Database explicitly tracks "Committees: Initiative → vote counts", showing attribution of signatures to committees. |
+| 4 |  |
+| 5 | Swiyu E-ID Login provides authentication. Municipality performs "manual signature check / deduplication" step before returning data to DB. |
+| 6 |  |
+| 7 | Encrypted DB is used for data storage. |
+| 8 | Paper with QR code is included as one of three input channels alongside digital options (PC Website, Mobile App). |
+| 9 | Municipality has "Adapter for Electronic Rolls" allowing integration with existing systems. Manual signature check/deduplication supports municipalities without advanced systems. |
+| 10 |  |
 
 ## Key Strenghts and Weaknesses
 `TODO`
