@@ -27,6 +27,7 @@ Die folgenden Phasen skizzieren wie eine schrittweise Weiterentwicklung des E-Co
 #### **Phase 2: Erweiterte Sicherheit**
 - **Fokus**: Verbesserte kryptografische Verfahren
 - **Potenzielle Features**:
+  - Potenzielle Erweiterung durch Schema aus [1]
   - Zero-Knowledge-Proofs (ZKP) für Stimmberechtigung
   - Verteilte Verifizierung durch mehrere Stimmregister
   - Anonymisierte Zwischenstände
@@ -54,13 +55,35 @@ Jede Phase baut auf den Erfahrungen der vorherigen auf und ermöglicht ein itera
 `TODO`
 
 ### Flowchart: High-level Process
-`TODO`
+
+#### Für Stimmberechtigte
+
+```mermaid 
+---
+config:
+  theme: redux
+  look: neo
+---
+flowchart TD
+    C["QR-Code mit dem Smartphone scannen"] --> n1["Die E-ID App Swiyu öffnet sich"]
+    D["Deep-Link auf dem Smartphone öffnen (iOS/Android)"] --> n1
+    n1 --> n3["Unterstützungsbekundung digital signieren"]
+    n3 --> n4["<b>Ende für Stimmberechtigte</b>"]
+    n5["ODER"] --> D & C
+    n6["Start für<br/><strong>Stimmberechtigte</strong>"] --> n5
+    n4@{ shape: rect}
+    n5@{ shape: diam}
+    n6@{ shape: rounded}
+```
 
 ### Sequence Diagram: Detailed Interactions & Data Flows 
 `TODO`
 
 ## User Experience
 `TODO`
+
+## Potenzielle Erweiterung in Richtung Phase 2
+In 
 
 ## Topics addressed
 The following table discusses the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html).*
@@ -120,5 +143,10 @@ Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of condu
 
 This software is licensed under a AGPL 3.0 License - see the [LICENSE](LICENSE) file for details. Please feel free to [choose any other](https://choosealicense.com/) [Open Source Initiative approved license](https://opensource.org/licenses) (e.g. a permissive license such as [MIT](https://opensource.org/license/mit)). Other content (e.g. text, images, etc.) is licensed under a [Creative Commons CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.de). Exceptions are possible in consultation with the organizers.
 
+## References
 
+[1] Moser, Florian (2025). E-Collecting in Switzerland: Status Quo, Setting & Proposals. Document prepared for the E-Collecting Hackathon organized by the Federal Chancellery of Switzerland, 31.10.-01.11.2025. With feedback contributions from Christian Killer, Audhild (INRIA Nancy), and E-Voting BFH.
 
+[2] Gfeller, Katja, Andreas Glaser, and Irina Lehner (2021). "E-Collecting: Umsetzungsvarianten und Rechtsetzungsbedarf" [E-Collecting: Implementation Variants and Legislative Requirements]. LeGes – Gesetzgebung & Evaluation, 32(1), 1–15. Available at: https://leges.weblaw.ch/legesissues/2021/1/e-collecting--umsetz_4ac1c3bc14.html
+
+[3] Bühlmann, Marc and Hans-Peter Schaub (2023). Staatspolitische Auswirkungen von E-Collecting: Studie im Auftrag der Bundeskanzlei [Political Impacts of E-Collecting: Study Commissioned by the Federal Chancellery]. Bern: Année Politique Suisse, Institut für Politikwissenschaft, Universität Bern. Available at: https://www.newsd.admin.ch/newsd/message/attachments/90666.pdf
