@@ -117,17 +117,30 @@ The following table discusses the topics presented in the [guidelines](https://w
 | 9 | **Erleichterte Einführung für Gemeinden mit Effizienzgewinn; auf der Grundlage bestehender Infrastruktur und Prozesse** / Facilitated Introduction for Municipalities with Efficiency Gains; Based on Existing Infrastructure and Processes | Modulare Architektur ermöglicht stufenweise Einführung: Gemeinden ohne digitale Infrastruktur nutzen ein Web-Portal oder erhalten PDF-Exporte. Standardisierte APIs für bestehende Stimmregister-Software. Automatische Bescheinigung reduziert manuellen Aufwand.|
 | 10 | **E-Collecting für alle föderalen Ebenen** / E-Collecting for All Federal Levels | Föderale Multi-Tenancy-Architektur: separate Instanzen für Bund, Kantone und Gemeinden mit standardisierten Schnittstellen. Konfigurierbare Workflows für unterschiedliche Anforderungen. Gemeinsame E-ID-Infrastruktur als Basis. Hierarchische Berechtigungen ermöglichen kantonale und kommunale Sammlungen parallel zu den eidgenössischen. Interoperabilität durch offene Standards.
 
-## Key Strenghts and Weaknesses
-`TODO`
+## Key Strengths and Weaknesses
+
+### Vertrauensannahmen
+- Vertrauen in Gemeinden/Stimmregister
+- Vertrauen in E-ID-Provider und deren Implementation
+- Vertrauen in Bundeskanzlei
+- Vertrauen in das Endgerät der Stimmberechtigten (z. B. Apple, Google etc.) 
 
 ### Strengths:
+- **Simpel und pragmatisch:** keine komplexe Kryptographie
+- **Schnell umsetzbar:** nutzt bestehende E-ID
+- **Vertraute Infrastruktur:** Stimmregister bereits etabliert
+- **Niedrige Einstiegshürden** für Gemeinden
 - **Sehr kleine Angriffsfläche**: Ein Navigationsschritt + ein Signaturschritt → wenige bewegliche Teile.
 - **Vertrauensanker in der nativen App**: Kryptografische Operationen laufen in Swiyu, nicht im Browser.
-- **Klare Handlungsführung**: Genau eine hochwichtige Aktion (Signieren) → geringe Verwechslungsgefahr.
+- **Klare Handlungsführung**: Genau eine Aktion (Signieren) → geringe Verwechslungsgefahr.
 - **Geringe Implementierungskomplexität**: Keine Zusatzzustände (Queues, Retries, Review-Flows) → leichter korrekt zu halten.
 
 ### Weaknesses:
 - **Authentizität von QR/Deep-Link**: Ohne kryptografische Bindung an Initiative & Relying Party sind Phishing/Redirects möglich.
+- **Eingeschränkte Verifizierbarkeit**
+  - Keine kryptografische End-to-End-Verifizierung
+  - Keine Auditierbarkeit für Stimmberechtigte
+  - in Phase 2/3 adressieren (ZKP, Homomorphe Verschlüsselung)
 
 ## Getting Started
 `TODO`
