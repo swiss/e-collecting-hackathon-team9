@@ -27,7 +27,7 @@ Die folgenden Phasen skizzieren wie eine schrittweise Weiterentwicklung des E-Co
 #### **Phase 2: Erweiterte Sicherheit**
 - **Fokus**: Verbesserte kryptografische Verfahren
 - **Potenzielle Features**:
-  - Potenzielle Erweiterung durch Schema aus [1]
+  - Potenzielle Erweiterung durch Schema aus [[1]](https://github.com/swiss/e-collecting-hackathon-team9/tree/main?tab=readme-ov-file#references)
   - Zero-Knowledge-Proofs (ZKP) für Stimmberechtigung
   - Verteilte Verifizierung durch mehrere Stimmregister
   - Anonymisierte Zwischenstände
