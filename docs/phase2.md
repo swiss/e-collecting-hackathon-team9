@@ -63,32 +63,27 @@ sequenceDiagram
 
 ## Strengths and Weaknesses
 
+### Stärken
 
+**Klare Rollen.** App = Authentifizierung+Signatur, EC = Annahme+Quittung+Zählung, ER = Berechtigung, CC = informiert — leicht zu bauen und zu erklären.
 
+**Echtzeit-Berechtigung.** Die EC→ER-Prüfung blockiert die meisten ungültigen Eingaben frühzeitig.
 
-### Strengths
+**Nutzerquittung.** Eine „Bestätigung/Quittung“ zeigt, dass die Unterstützung gezählt wurde, und hilft bei Streitfällen.
 
-**Clear roles.** App = auth+sign, EC = intake+receipt+counts, ER = eligibility, CC = informed — easy to build and explain.
+**Authentifizierung an Swiyu delegiert.** Keine Neuimplementierung der Authentifizierung, erhöht die Sicherheit. Swiyu kann das Ablaufdatum öffentlicher Schlüssel festlegen und Wählende nach Ablauf zur erneuten Zustimmung zu neuen Schlüsselpaaren auffordern.
 
-**Real-time eligibility.** EC→ER check blocks most bogus submissions early.
+**Zugänglichkeit für das Komitee.** Das Komitee wird über das Ergebnis informiert.
 
-**User receipt.** “Bestätigung/Quittung” lets people know they were counted and supports disputes.
+------
 
-**Authentication delegated to Swiyu**. no reimplementation of authentication, increase security. Swiyu can set the expiration date of public key and ask voters to reagree on new key pairs after expiration.
+### Schwächen
 
-**Committee accessibility.** Committee will be informed of the result
+**Kein theoretischer Sicherheitsnachweis des Protokolls.**
 
+**Verknüpfbarkeit & Privatsphäre.** Die Wiederverwendung einer stabilen ID/eines Schlüssels über Initiativen hinweg ermöglicht das Profilen der Interessen einer wählenden Person.
 
-
-
-
-### Weaknesses
-
-**No theoretic proof of security of the protocol.** 
-
-**Linkability & privacy.** Reusing a stable ID/key across initiatives lets others profile a voter’s interests.
-
-**Single point of trust.** EC/ER are central; there’s no independent audit trail or multi-party attestation.
+**Single Point of Trust.** EC/ER sind zentral; es gibt keine unabhängige Prüfkette oder Mehrparteien-Attestierung.
 
 
 

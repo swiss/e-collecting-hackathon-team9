@@ -121,12 +121,13 @@ The following table discusses the topics presented in the [guidelines](https://w
 `TODO`
 
 ### Strengths:
-- ...
-- ...
+- **Sehr kleine Angriffsfläche**: Ein Navigationsschritt + ein Signaturschritt → wenige bewegliche Teile.
+- **Vertrauensanker in der nativen App**: Kryptografische Operationen laufen in Swiyu, nicht im Browser.
+- **Klare Handlungsführung**: Genau eine hochwichtige Aktion (Signieren) → geringe Verwechslungsgefahr.
+- **Geringe Implementierungskomplexität**: Keine Zusatzzustände (Queues, Retries, Review-Flows) → leichter korrekt zu halten.
 
 ### Weaknesses:
-- ...
-- ...
+- **Authentizität von QR/Deep-Link**: Ohne kryptografische Bindung an Initiative & Relying Party sind Phishing/Redirects möglich.
 
 ## Getting Started
 `TODO`
