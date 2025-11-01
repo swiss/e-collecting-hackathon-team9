@@ -77,7 +77,22 @@ flowchart TD
 ```
 
 ### Sequence Diagram: Detailed Interactions & Data Flows 
-`TODO`
+```mermaid
+sequenceDiagram
+    participant V as Stimmberechtigte (Voter)
+    participant App as E-ID App Swiyu
+    participant EC as E-Collecting (Bundeskanzlei)
+    participant ER as Stimmregister (Gemeinde)
+    participant CC as Komitee (Initiative)
+
+    V->>App: QR-Code scannen<br/>oder Deep-Link öffnen
+    App->>V: Authentifizierung & Signatur
+    V->>EC: Signierte Unterstützungsbekundung einreichen
+    EC->>ER: Stimmberechtigung prüfen
+    ER-->>EC: gültig
+    EC-->>V: Bestätigung mit Quittung
+    EC-->>CC: Aggregierte Zähler pro Gemeinde
+```
 
 ## User Experience
 `TODO`
