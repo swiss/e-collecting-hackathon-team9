@@ -1,0 +1,55 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:'de' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% block title %}Prosignum{% endblock %} - {% trans "Swiss Confederation" %}</title>
+
+    <meta name="description" content="{% block meta_description %}{% trans 'Prosignum - Swiss Federal Government e-Signature Platform' %}{% endblock %}">
+    <meta name="author" content="{% trans 'Federal Chancellery' %}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+
+    <!-- CD Bund CSS -->
+    <link rel="stylesheet" href="{% static 'css/cd-bund.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    {% include 'components/header.html' %}
+
+    <!-- Mandatory Red Separator -->
+    {% include 'components/red_separator.html' %}
+
+    <!-- Main Content -->
+    <main id="main-content" class="container" role="main">
+        {% block breadcrumbs %}{% endblock %}
+
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                    {% include 'components/alert.html' with type="error" message=message %}
+                {% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                    {% include 'components/alert.html' with type="success" message=message %}
+                {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                    {% include 'components/alert.html' with type="warning" message=message %}
+                {% else %}
+                    {% include 'components/alert.html' with type="info" message=message %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'components/footer.html' %}
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

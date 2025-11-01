@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Error" %}{% endblock %}
+
+{% block meta_description %}{% trans "An error occurred during authentication" %}{% endblock %}
+
+{% block content %}
+<div style="text-align: center; max-width: 600px; margin: 0 auto;">
+    <h1 style="color: var(--ch-error);">{% trans "Error" %}</h1>
+
+    {% include 'components/alert.html' with type="error" title=_("An error occurred during authentication:") message=error %}
+
+    <div style="margin-top: var(--spacing-xl);">
+        {% include 'components/button.html' with text=_("Try Again") url="/swiyu/login/" type="primary" %}
+        {% include 'components/button.html' with text=_("Go to Homepage") url="/" type="secondary" %}
+    </div>
+</div>
+{% endblock %}

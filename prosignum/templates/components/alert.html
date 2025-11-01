@@ -1,0 +1,34 @@
+{% load i18n %}
+
+{% comment %}
+Reusable alert component for CD Bund compliance
+
+Parameters:
+- type: Alert type - "success", "warning", "error", "info" (required)
+- title: Alert title (optional)
+- message: Alert message (required)
+- dismissible: Boolean, if true shows close button (default: false)
+- extra_classes: Additional CSS classes (optional)
+
+Usage examples:
+{% include 'components/alert.html' with type="success" title="Success!" message="Your form was submitted." %}
+{% include 'components/alert.html' with type="error" message="An error occurred." %}
+{% include 'components/alert.html' with type="info" message="Please verify your identity." dismissible=True %}
+{% endcomment %}
+
+<div class="ch-alert ch-alert-{{ type }} {{ extra_classes }}"
+     role="alert"
+     aria-live="polite">
+    {% if title %}
+        <div class="ch-alert-title">{{ title }}</div>
+    {% endif %}
+    <div class="ch-alert-message">{{ message }}</div>
+    {% if dismissible %}
+        <button type="button"
+                class="ch-alert-close"
+                aria-label="{% trans 'Close alert' %}"
+                onclick="this.parentElement.remove()">
+            &times;
+        </button>
+    {% endif %}
+</div>

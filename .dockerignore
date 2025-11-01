@@ -1,0 +1,17 @@
+.env
+.git
+.gitignore
+*.pyc
+__pycache__
+*.sqlite3
+venv/
+*.md
+.DS_Store
+*.log
+didtoolbox-keys/
+didtoolbox-output/
+Dockerfile.didtoolbox
+docker-compose.didgen.yml
+.claude/
+docs/
+ux/

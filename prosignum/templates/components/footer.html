@@ -1,0 +1,21 @@
+{% load i18n %}
+
+<footer class="ch-footer">
+    <div class="container">
+        <div class="ch-footer-content">
+            <div class="ch-footer-copyright">
+                <p>
+                    &copy; {% now "Y" %} {% trans "Swiss Confederation" %}
+                    <br>
+                    {% trans "Federal Chancellery" %}
+                </p>
+            </div>
+
+            <nav class="ch-footer-nav" aria-label="{% trans 'Footer navigation' %}">
+                <a href="{% url 'legal' %}">{% trans "Legal Notice" %}</a>
+                <a href="{% url 'impressum' %}">{% trans "Impressum" %}</a>
+                <a href="{% url 'contact' %}">{% trans "Contact" %}</a>
+            </nav>
+        </div>
+    </div>
+</footer>

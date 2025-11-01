@@ -1,0 +1,12 @@
+services:
+  verifier-service:
+    environment:
+      # Production signing key - replace with your actual key from did-keys/signing-key.pem
+      # This file overrides the placeholder key in docker-compose.yml
+      # Copy this file to docker-compose.prod.yml and paste your actual key below
+      SIGNING_KEY: |
+        -----BEGIN EC PRIVATE KEY-----
+        PASTE_YOUR_KEY_LINE_1_HERE
+        PASTE_YOUR_KEY_LINE_2_HERE
+        PASTE_YOUR_KEY_LINE_3_HERE
+        -----END EC PRIVATE KEY-----

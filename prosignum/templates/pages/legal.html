@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Legal Notice" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "Legal Notice" %}</h1>
+
+<div class="ch-card">
+    <h2>{% trans "Publisher" %}</h2>
+    <p>
+        {% trans "Swiss Federal Chancellery" %}<br>
+        {% trans "Federal Palace East Wing" %}<br>
+        3003 {% trans "Bern" %}<br>
+        {% trans "Switzerland" %}
+    </p>
+</div>
+
+<div class="ch-card">
+    <h2>{% trans "Liability" %}</h2>
+    <p>
+        {% blocktrans %}
+        Although the Federal Chancellery pays great attention to the accuracy of the information published on the Internet,
+        it cannot accept any liability for the accuracy, correctness, currentness, reliability and completeness of this information.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans %}
+        The Federal Chancellery expressly reserves the right to change, delete or temporarily not publish the contents in whole
+        or in part at any time and without prior notice.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans %}
+        Liability claims regarding damage caused by the use of any information provided, including any kind of information
+        which is incomplete or incorrect, will therefore be rejected.
+        {% endblocktrans %}
+    </p>
+</div>
+
+<div class="ch-card">
+    <h2>{% trans "References and Links" %}</h2>
+    <p>
+        {% blocktrans %}
+        References and links to third party websites lie outside our area of responsibility. Access to and use of such
+        websites occur entirely at the user's own risk. The Federal Chancellery explicitly states that it has no influence
+        whatsoever on the design, content and offerings of linked sites.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans %}
+        Information and services offered by linked sites are entirely the responsibility of the respective third parties.
+        No liability can be accepted in respect of the content of such websites.
+        {% endblocktrans %}
+    </p>
+</div>
+
+<div class="ch-card">
+    <h2>{% trans "Data Protection" %}</h2>
+    <p>
+        {% blocktrans %}
+        Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation
+        (Data Protection Act, DPA), everyone has the right to protection of their privacy as well as protection from misuse
+        of their personal data.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans %}
+        The operators of these pages take the protection of your personal data very seriously. We treat your personal data
+        confidentially and in accordance with the statutory data protection regulations and this privacy policy.
+        {% endblocktrans %}
+    </p>
+</div>
+
+<div class="ch-card">
+    <h2>{% trans "Copyright" %}</h2>
+    <p>
+        {% blocktrans %}
+        Copyright, Swiss Confederation. Information on the Federal Administration's websites is made available to the public.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans %}
+        Downloading or copying of texts, illustrations, photographs or other data does not entail any transfer of rights
+        to the content.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans %}
+        The copyright and all other rights relating to texts, illustrations, photographs and other data placed on the
+        Federal Administration's websites are the exclusive property of the Swiss Confederation or the expressly named
+        rights holders. Any reproduction requires the prior written consent of the copyright holder.
+        {% endblocktrans %}
+    </p>
+</div>
+
+<div style="margin-top: var(--spacing-xl);">
+    {% include 'components/button.html' with text=_("Back to Home") url="/" type="secondary" %}
+</div>
+{% endblock %}

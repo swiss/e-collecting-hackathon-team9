@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block meta_description %}{% trans "Prosignum - Secure, federated signature collection for Swiss e-democracy" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Prosignum" %}</h1>
+    <p class="subtitle">{% trans "Secure, federated signature collection for Swiss e-democracy" %}</p>
+
+    <!-- Active Initiatives Section -->
+    {% if initiatives %}
+        <div style="margin-top: var(--spacing-xxl);">
+            {% include 'components/red_separator.html' %}
+            <h2 style="margin-top: var(--spacing-lg);">{% trans "Active Initiatives" %}</h2>
+            <p style="color: var(--ch-gray-medium); margin-bottom: var(--spacing-xl);">
+                {% trans "Currently collecting signatures" %}
+            </p>
+
+            {% for initiative in initiatives %}
+                {% include 'components/initiative_card.html' with initiative=initiative already_signed=initiative.already_signed %}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

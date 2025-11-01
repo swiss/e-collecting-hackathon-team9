@@ -1,0 +1,16 @@
+{
+  "client_name": "Prosignum Hackathon",
+  "client_name#de": "Prosignum Hackathon",
+  "client_name#fr": "Prosignum Hackathon",
+  "client_name#it": "Prosignum Hackathon",
+  "logo_uri": "https://prosignum.lukeisontheroad.com/static/logo.png",
+  "logo_uri#de": "https://prosignum.lukeisontheroad.com/static/logo.png",
+  "logo_uri#fr": "https://prosignum.lukeisontheroad.com/static/logo.png",
+  "logo_uri#it": "https://prosignum.lukeisontheroad.com/static/logo.png",
+  "vp_formats": {
+    "vc+sd-jwt": {
+      "sd-jwt_alg_values": ["ES256"],
+      "kb-jwt_alg_values": ["ES256"]
+    }
+  }
+}

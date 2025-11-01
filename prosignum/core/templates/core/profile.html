@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "My Profile" %}{% endblock %}
+
+{% block meta_description %}{% trans "User profile - Prosignum" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "My Profile" %}</h1>
+    <p class="subtitle">{% trans "Your account information" %}</p>
+
+    {% include 'components/red_separator.html' %}
+
+    <div class="ch-card" style="margin-top: var(--spacing-xl);">
+        <h2 class="ch-card-title">{% trans "User Information" %}</h2>
+
+        <p style="margin-bottom: var(--spacing-lg);">
+            <strong>{% trans "Logged in as:" %}</strong> {{ user.get_full_name|default:user.username }}
+        </p>
+
+        {% if user.swiyu_profile %}
+            <h3 style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md); color: var(--ch-gray-dark);">
+                {% trans "Swiss E-ID Verified Details" %}
+            </h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="border-bottom: 1px solid var(--ch-gray-light);">
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                        {% trans "Name:" %}
+                    </td>
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); color: var(--ch-gray-dark);">
+                        {{ user.swiyu_profile.given_name }} {{ user.swiyu_profile.family_name }}
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--ch-gray-light);">
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                        {% trans "Birth Date:" %}
+                    </td>
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); color: var(--ch-gray-dark);">
+                        {{ user.swiyu_profile.birth_date|date:"d. F Y" }}
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--ch-gray-light);">
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                        {% trans "AHV Number:" %}
+                    </td>
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); color: var(--ch-gray-dark);">
+                        {{ user.participant_profile.ahv_number|default:"—" }}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                        {% trans "Verified At:" %}
+                    </td>
+                    <td style="padding: var(--spacing-md) var(--spacing-xs); color: var(--ch-gray-dark);">
+                        {{ user.swiyu_profile.verified_at|date:"d.m.Y H:i" }}
+                    </td>
+                </tr>
+            </table>
+        {% endif %}
+    </div>
+
+    <div class="actions" style="margin-top: var(--spacing-xl); display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+        {% if user.is_staff or user.is_superuser %}
+            {% include 'components/button.html' with text=_("Administration Access") url="/admin/" type="primary" %}
+        {% endif %}
+        {% include 'components/button.html' with text=_("Logout") url="/logout/" type="secondary" %}
+    </div>
+
+    <div style="margin-top: var(--spacing-xxl); text-align: center;">
+        <a href="{% url 'home' %}" style="color: var(--ch-blue-primary); text-decoration: none;">
+            &larr; {% trans "Back to Home" %}
+        </a>
+    </div>
+{% endblock %}

@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Sign Initiative" %}{% endblock %}
+
+{% block meta_description %}{% trans "Sign the initiative" %} - {{ initiative.title }}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Sign Initiative" %}</h1>
+    <p class="subtitle">{{ initiative.title }}</p>
+
+    {% include 'components/red_separator.html' %}
+
+    <div class="ch-card" style="margin-top: var(--spacing-xl);">
+        <h2 class="ch-card-title">{% trans "Initiative Details" %}</h2>
+
+        {% if initiative.url %}
+        <div style="margin-bottom: var(--spacing-lg); padding: var(--spacing-md); background-color: var(--ch-blue-bg); border-left: 4px solid var(--ch-blue-primary); border-radius: 4px;">
+            <div style="font-weight: 700; margin-bottom: var(--spacing-xs); color: var(--ch-blue-primary);">
+                {% trans "Official Documentation" %}
+            </div>
+            <a href="{{ initiative.url }}"
+               target="_blank"
+               rel="noopener noreferrer"
+               style="color: var(--ch-blue-primary); text-decoration: underline; word-break: break-all;">
+                {{ initiative.url }}
+            </a>
+        </div>
+        {% endif %}
+
+        <div style="white-space: pre-line; line-height: 1.8; color: var(--ch-gray-dark);">{{ initiative.description }}</div>
+
+        {% if initiative.initiative_committee %}
+        <div style="margin-top: var(--spacing-xl); padding: var(--spacing-md); background-color: var(--ch-gray-bg); border-radius: 4px;">
+            <div style="font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--ch-gray-dark);">
+                {% trans "Initiative Committee" %}
+            </div>
+            <div style="white-space: pre-line; font-size: var(--font-size-small); line-height: 1.6; color: var(--ch-gray-dark);">{{ initiative.initiative_committee }}</div>
+        </div>
+        {% endif %}
+
+        <div style="margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); border-top: 1px solid var(--ch-gray-light);">
+            {% include 'components/alert.html' with type="info" message=_("Only eligible voters who are registered in a Swiss municipality and have voting rights in federal matters can sign this initiative.") %}
+        </div>
+
+        <div style="margin-top: var(--spacing-lg);">
+            {% include 'components/alert.html' with type="warning" message=_("Anyone who bribes or allows themselves to be bribed in connection with a signature collection, or who falsifies the result of a signature collection for a popular initiative, is punishable under Art. 281 or Art. 282 of the Criminal Code.") %}
+        </div>
+
+        <div style="margin-top: var(--spacing-lg); padding: var(--spacing-md); background-color: var(--ch-gray-bg); border-radius: 4px; font-size: var(--font-size-small); color: var(--ch-gray-dark);">
+            <strong>{% trans "Collection Deadline:" %}</strong> {{ initiative.collection_end_date|date:"d.m.Y" }}
+        </div>
+    </div>
+
+    <div class="ch-card" style="margin-top: var(--spacing-xl);">
+        <h2 class="ch-card-title">{% trans "Your Signature" %}</h2>
+
+        <p style="margin-bottom: var(--spacing-lg); color: var(--ch-gray-dark);">
+            {% trans "The following information from your Swiss E-ID will be used for your signature:" %}
+        </p>
+
+        <table style="width: 100%; margin-bottom: var(--spacing-xl); border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid var(--ch-gray-light);">
+                <td style="padding: var(--spacing-sm) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                    {% trans "Name:" %}
+                </td>
+                <td style="padding: var(--spacing-sm) var(--spacing-xs); color: var(--ch-gray-dark);">
+                    {{ user.swiyu_profile.family_name }}
+                </td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--ch-gray-light);">
+                <td style="padding: var(--spacing-sm) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                    {% trans "Given Names:" %}
+                </td>
+                <td style="padding: var(--spacing-sm) var(--spacing-xs); color: var(--ch-gray-dark);">
+                    {{ user.swiyu_profile.given_name }}
+                </td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--ch-gray-light);">
+                <td style="padding: var(--spacing-sm) var(--spacing-xs); font-weight: 700; color: var(--ch-gray-dark);">
+                    {% trans "Birth Date:" %}
+                </td>
+                <td style="padding: var(--spacing-sm) var(--spacing-xs); color: var(--ch-gray-dark);">
+                    {{ user.swiyu_profile.birth_date|date:"d.m.Y" }}
+                </td>
+            </tr>
+        </table>
+
+        <form method="post" style="margin-top: var(--spacing-lg);">
+            {% csrf_token %}
+
+            <div style="margin-bottom: var(--spacing-lg);">
+                {% include 'components/form_field.html' with label=_("Street and House Number") name="street_and_number" field_type="text" required=True placeholder=_("e.g. Bundesgasse 3") %}
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg);">
+                <div>
+                    {% include 'components/form_field.html' with label=_("Postal Code") name="postal_code" field_type="text" required=True placeholder=_("e.g. 3003") %}
+                </div>
+                <div>
+                    <label for="id_municipality_search" class="ch-label">
+                        {% trans "Political Municipality" %} <span class="required" aria-label="{% trans 'required' %}">*</span>
+                    </label>
+                    <input type="text"
+                           id="id_municipality_search"
+                           list="municipalities_list"
+                           class="ch-input"
+                           placeholder="{% trans 'Please enter postal code first' %}"
+                           autocomplete="off"
+                           required
+                           aria-required="true"
+                           style="background-color: var(--ch-gray-bg); color: var(--ch-gray-medium);">
+                    <datalist id="municipalities_list">
+                        {% for municipality in municipalities %}
+                            <option value="{{ municipality.name }} ({{ municipality.canton }})" data-id="{{ municipality.id }}">
+                        {% endfor %}
+                    </datalist>
+                    <input type="hidden" id="id_municipality" name="municipality" required>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); border-top: 1px solid var(--ch-gray-light);">
+                {% include 'components/alert.html' with type="info" message=_("By signing this initiative, you confirm that all information provided is accurate and that you are eligible to participate in this signature collection.") %}
+            </div>
+
+            <div class="actions" style="margin-top: var(--spacing-xl); display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+                {% include 'components/button.html' with text=_("Submit Signature") submit=True type="primary" %}
+                {% include 'components/button.html' with text=_("Cancel") url="/" type="secondary" %}
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('id_municipality_search');
+    const hiddenInput = document.getElementById('id_municipality');
+    const dataList = document.getElementById('municipalities_list');
+    const plzInput = document.getElementById('id_postal_code');
+
+    // PLZ to municipality mapping from server
+    const plzToMunicipality = {{ plz_to_municipality_json|safe }};
+
+    // Create a map of municipality names to IDs and postal codes
+    const municipalityMap = new Map();
+    const municipalityToPlz = new Map();
+
+    dataList.querySelectorAll('option').forEach(option => {
+        const munId = option.getAttribute('data-id');
+        const munValue = option.value;
+        municipalityMap.set(munValue, munId);
+
+        // Find postal code for this municipality from our mapping
+        for (const [plz, municipalities] of Object.entries(plzToMunicipality)) {
+            const match = municipalities.find(m => m.id == munId);
+            if (match) {
+                municipalityToPlz.set(munValue, plz);
+                break;
+            }
+        }
+    });
+
+    // Auto-fill municipality when PLZ is entered
+    plzInput.addEventListener('input', function() {
+        const plz = this.value.trim();
+
+        if (plzToMunicipality[plz]) {
+            const municipalities = plzToMunicipality[plz];
+
+            if (municipalities.length === 1) {
+                // Only one municipality for this PLZ, auto-fill it
+                const mun = municipalities[0];
+                searchInput.value = mun.display;
+                hiddenInput.value = mun.id;
+                searchInput.style.backgroundColor = '#fff';
+                searchInput.style.color = 'var(--ch-gray-dark)';
+            } else if (municipalities.length > 1) {
+                // Multiple municipalities - don't auto-fill, but user can still select
+                // Could optionally filter the datalist here
+                searchInput.value = '';
+                hiddenInput.value = '';
+                searchInput.style.backgroundColor = '#fff';
+                searchInput.style.color = 'var(--ch-gray-dark)';
+                console.log('Multiple municipalities found for PLZ:', plz);
+            }
+        } else {
+            // No municipality found for this PLZ
+            searchInput.value = '';
+            hiddenInput.value = '';
+            searchInput.style.backgroundColor = 'var(--ch-gray-bg)';
+            searchInput.style.color = 'var(--ch-gray-medium)';
+        }
+    });
+
+    // Auto-fill PLZ when municipality is selected
+    searchInput.addEventListener('input', function() {
+        const selectedValue = this.value;
+
+        if (municipalityMap.has(selectedValue)) {
+            hiddenInput.value = municipalityMap.get(selectedValue);
+
+            // Auto-fill postal code
+            if (municipalityToPlz.has(selectedValue)) {
+                plzInput.value = municipalityToPlz.get(selectedValue);
+            }
+
+            // Update styling to show it's filled
+            this.style.backgroundColor = '#fff';
+            this.style.color = 'var(--ch-gray-dark)';
+        } else {
+            hiddenInput.value = '';
+        }
+    });
+
+    // Clear selection on blur if no valid match
+    searchInput.addEventListener('blur', function() {
+        setTimeout(() => {
+            if (!municipalityMap.has(this.value)) {
+                this.value = '';
+                hiddenInput.value = '';
+            }
+        }, 200);
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,421 @@
+# French translations for Prosignum
+# Copyright (C) 2025 Swiss Federal Chancellery
+# This file is distributed under the same license as the Prosignum package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Prosignum 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-11 09:00+0100\n"
+"PO-Revision-Date: 2025-01-11 09:00+0100\n"
+"Last-Translator: Swiss Federal Chancellery\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# Navigation and common terms
+msgid "Home"
+msgstr "Accueil"
+
+msgid "Swiyu Login"
+msgstr "Connexion Swiyu"
+
+msgid "Login with Swiss E-ID"
+msgstr "Se connecter avec Swiss E-ID"
+
+msgid "Logout"
+msgstr "Se déconnecter"
+
+msgid "Back to Home"
+msgstr "Retour à l'accueil"
+
+msgid "Error"
+msgstr "Erreur"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Legal Notice"
+msgstr "Mentions légales"
+
+msgid "Impressum"
+msgstr "Mentions légales"
+
+# Organizations and entities
+msgid "Swiss Confederation"
+msgstr "Confédération suisse"
+
+msgid "Federal Chancellery"
+msgstr "Chancellerie fédérale"
+
+msgid "Bundeskanzlei | Prosignum"
+msgstr "Chancellerie fédérale | Prosignum"
+
+msgid "Swiss Confederation - Prosignum Home"
+msgstr "Confédération suisse - Accueil Prosignum"
+
+# Accessibility
+msgid "Skip to main content"
+msgstr "Aller au contenu principal"
+
+msgid "Main navigation"
+msgstr "Navigation principale"
+
+msgid "Footer navigation"
+msgstr "Navigation du pied de page"
+
+msgid "Language selection"
+msgstr "Sélection de la langue"
+
+msgid "required"
+msgstr "obligatoire"
+
+msgid "Loading"
+msgstr "Chargement"
+
+msgid "Close alert"
+msgstr "Fermer l'alerte"
+
+# User interface
+msgid "Welcome back!"
+msgstr "Bienvenue!"
+
+msgid "Logged in as:"
+msgstr "Connecté en tant que:"
+
+msgid "Swiss E-ID Verified Details"
+msgstr "Détails vérifiés Swiss E-ID"
+
+msgid "Name:"
+msgstr "Nom:"
+
+msgid "Birth Date:"
+msgstr "Date de naissance:"
+
+msgid "Birth Place:"
+msgstr "Lieu de naissance:"
+
+msgid "Verified At:"
+msgstr "Vérifié le:"
+
+msgid "Go to Admin Panel"
+msgstr "Aller au panneau d'administration"
+
+# Prosignum specific
+msgid "Prosignum"
+msgstr "Prosignum"
+
+msgid "Prosignum - Secure, federated signature collection for Swiss e-democracy"
+msgstr "Prosignum - Collecte de signatures fédérée et sécurisée pour la démocratie électronique suisse"
+
+msgid "Secure, federated signature collection for Swiss e-democracy"
+msgstr "Collecte de signatures fédérée et sécurisée pour la démocratie électronique suisse"
+
+msgid "Please authenticate using your Swiss E-ID to access the platform."
+msgstr "Veuillez vous authentifier avec votre Swiss E-ID pour accéder à la plateforme."
+
+msgid "Platform Features"
+msgstr "Fonctionnalités de la plateforme"
+
+msgid "Initiative Management"
+msgstr "Gestion des initiatives"
+
+msgid "Create and manage referendum initiatives with full lifecycle tracking"
+msgstr "Créer et gérer des initiatives référendaires avec suivi complet du cycle de vie"
+
+msgid "Digital Signatures"
+msgstr "Signatures numériques"
+
+msgid "Collect signatures with Swiss E-ID authentication and municipality verification"
+msgstr "Collecter des signatures avec authentification Swiss E-ID et vérification communale"
+
+msgid "Municipality Review"
+msgstr "Examen communal"
+
+msgid "Municipality-based review workflow with accept/reject capabilities"
+msgstr "Flux de travail d'examen basé sur les communes avec fonctionnalités d'acceptation/rejet"
+
+msgid "Statistics & Reports"
+msgstr "Statistiques et rapports"
+
+msgid "View signature totals by municipality while maintaining privacy"
+msgstr "Afficher les totaux de signatures par commune tout en préservant la vie privée"
+
+msgid "Powered by Swiyu Swiss E-ID | Built for e-Collecting Hackathon 2025"
+msgstr "Propulsé par Swiyu Swiss E-ID | Développé pour le Hackathon e-Collecting 2025"
+
+# Login page
+msgid "Scan the QR code below with your Swiyu wallet app"
+msgstr "Scannez le code QR ci-dessous avec votre application Swiyu wallet"
+
+msgid "Instructions: 1. Open your Swiyu wallet app on your smartphone, 2. Scan the QR code below, 3. Approve the authentication request in the app"
+msgstr "Instructions: 1. Ouvrez votre application Swiyu wallet sur votre smartphone, 2. Scannez le code QR ci-dessous, 3. Approuvez la demande d'authentification dans l'application"
+
+msgid "QR Code for authentication"
+msgstr "Code QR pour l'authentification"
+
+msgid "Waiting for you to scan the QR code..."
+msgstr "En attente de la numérisation du code QR..."
+
+msgid "QR code expires in"
+msgstr "Le code QR expire dans"
+
+msgid "seconds"
+msgstr "secondes"
+
+msgid "For testing: Auto-completes after 5 seconds with mock data"
+msgstr "Pour les tests: Complète automatiquement après 5 secondes avec des données de test"
+
+msgid "Authentication successful! Redirecting..."
+msgstr "Authentification réussie! Redirection..."
+
+msgid "Authentication failed:"
+msgstr "Échec de l'authentification:"
+
+msgid "Unknown error"
+msgstr "Erreur inconnue"
+
+msgid "QR code expired. Please"
+msgstr "Code QR expiré. Veuillez"
+
+msgid "refresh"
+msgstr "actualiser"
+
+msgid "to try again."
+msgstr "pour réessayer."
+
+# Error page
+msgid "An error occurred during authentication"
+msgstr "Une erreur s'est produite lors de l'authentification"
+
+msgid "An error occurred during authentication:"
+msgstr "Une erreur s'est produite lors de l'authentification:"
+
+msgid "Try Again"
+msgstr "Réessayer"
+
+msgid "Go to Homepage"
+msgstr "Aller à la page d'accueil"
+
+# Legal pages
+msgid "Publisher"
+msgstr "Éditeur"
+
+msgid "Federal Palace East Wing"
+msgstr "Palais fédéral Est"
+
+msgid "Bern"
+msgstr "Berne"
+
+msgid "Switzerland"
+msgstr "Suisse"
+
+msgid "Liability"
+msgstr "Responsabilité"
+
+msgid ""
+"Although the Federal Chancellery pays great attention to the accuracy of the information published on the Internet,\n"
+"it cannot accept any liability for the accuracy, correctness, currentness, reliability and completeness of this information."
+msgstr ""
+"Bien que la Chancellerie fédérale accorde une grande attention à l'exactitude des informations publiées sur Internet,\n"
+"elle ne peut accepter aucune responsabilité quant à l'exactitude, la correction, l'actualité, la fiabilité et l'exhaustivité de ces informations."
+
+msgid ""
+"The Federal Chancellery expressly reserves the right to change, delete or temporarily not publish the contents in whole\n"
+"or in part at any time and without prior notice."
+msgstr ""
+"La Chancellerie fédérale se réserve expressément le droit de modifier, supprimer ou temporairement ne pas publier le contenu en tout\n"
+"ou en partie à tout moment et sans préavis."
+
+msgid ""
+"Liability claims regarding damage caused by the use of any information provided, including any kind of information\n"
+"which is incomplete or incorrect, will therefore be rejected."
+msgstr ""
+"Les réclamations en responsabilité concernant les dommages causés par l'utilisation des informations fournies, y compris tout type d'information\n"
+"incomplète ou incorrecte, seront donc rejetées."
+
+msgid "References and Links"
+msgstr "Références et liens"
+
+msgid ""
+"References and links to third party websites lie outside our area of responsibility. Access to and use of such\n"
+"websites occur entirely at the user's own risk. The Federal Chancellery explicitly states that it has no influence\n"
+"whatsoever on the design, content and offerings of linked sites."
+msgstr ""
+"Les références et liens vers des sites web tiers sont en dehors de notre domaine de responsabilité. L'accès et l'utilisation de tels\n"
+"sites web se font entièrement aux risques de l'utilisateur. La Chancellerie fédérale déclare explicitement qu'elle n'a aucune influence\n"
+"sur la conception, le contenu et les offres des sites liés."
+
+msgid ""
+"Information and services offered by linked sites are entirely the responsibility of the respective third parties.\n"
+"No liability can be accepted in respect of the content of such websites."
+msgstr ""
+"Les informations et services offerts par les sites liés relèvent entièrement de la responsabilité des tiers respectifs.\n"
+"Aucune responsabilité ne peut être acceptée concernant le contenu de ces sites web."
+
+msgid "Data Protection"
+msgstr "Protection des données"
+
+msgid ""
+"Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation\n"
+"(Data Protection Act, DPA), everyone has the right to protection of their privacy as well as protection from misuse\n"
+"of their personal data."
+msgstr ""
+"Conformément à l'article 13 de la Constitution fédérale suisse et aux dispositions relatives à la protection des données de la Confédération suisse\n"
+"(Loi sur la protection des données, LPD), toute personne a le droit à la protection de sa vie privée ainsi qu'à la protection contre l'utilisation abusive\n"
+"de ses données personnelles."
+
+msgid ""
+"The operators of these pages take the protection of your personal data very seriously. We treat your personal data\n"
+"confidentially and in accordance with the statutory data protection regulations and this privacy policy."
+msgstr ""
+"Les exploitants de ces pages prennent la protection de vos données personnelles très au sérieux. Nous traitons vos données personnelles\n"
+"de manière confidentielle et conformément aux réglementations légales en matière de protection des données et à cette politique de confidentialité."
+
+msgid "Copyright"
+msgstr "Droits d'auteur"
+
+msgid ""
+"Copyright, Swiss Confederation. Information on the Federal Administration's websites is made available to the public."
+msgstr ""
+"Droits d'auteur, Confédération suisse. Les informations sur les sites web de l'Administration fédérale sont mises à disposition du public."
+
+msgid ""
+"Downloading or copying of texts, illustrations, photographs or other data does not entail any transfer of rights\n"
+"to the content."
+msgstr ""
+"Le téléchargement ou la copie de textes, illustrations, photographies ou autres données n'entraîne aucun transfert de droits\n"
+"sur le contenu."
+
+msgid ""
+"The copyright and all other rights relating to texts, illustrations, photographs and other data placed on the\n"
+"Federal Administration's websites are the exclusive property of the Swiss Confederation or the expressly named\n"
+"rights holders. Any reproduction requires the prior written consent of the copyright holder."
+msgstr ""
+"Les droits d'auteur et tous les autres droits relatifs aux textes, illustrations, photographies et autres données placés sur les\n"
+"sites web de l'Administration fédérale sont la propriété exclusive de la Confédération suisse ou des\n"
+"titulaires de droits expressément nommés. Toute reproduction nécessite le consentement écrit préalable du titulaire des droits d'auteur."
+
+# Impressum page
+msgid "Publisher and Editor"
+msgstr "Éditeur et rédaction"
+
+msgid "Information and Communication Services ICS"
+msgstr "Services d'information et de communication SIC"
+
+msgid "Email:"
+msgstr "E-mail:"
+
+msgid "Phone:"
+msgstr "Téléphone:"
+
+msgid "Website:"
+msgstr "Site web:"
+
+msgid "Responsible for Content"
+msgstr "Responsable du contenu"
+
+msgid "Bundesgasse 3"
+msgstr "Bundesgasse 3"
+
+msgid "Technical Operation"
+msgstr "Exploitation technique"
+
+msgid "Federal Office of Information Technology, Systems and Telecommunication FOITT"
+msgstr "Office fédéral de l'informatique et de la télécommunication OFIT"
+
+msgid "Monbijoustrasse 74"
+msgstr "Monbijoustrasse 74"
+
+msgid "Design and Implementation"
+msgstr "Conception et mise en œuvre"
+
+msgid "Prosignum Platform"
+msgstr "Plateforme Prosignum"
+
+msgid "Built for e-Collecting Hackathon 2025"
+msgstr "Développé pour le Hackathon e-Collecting 2025"
+
+msgid "Using Swiss Federal Government Corporate Design (CD Bund)"
+msgstr "Utilisant le design corporatif du gouvernement fédéral suisse (CD Bund)"
+
+msgid "Applicable Law"
+msgstr "Droit applicable"
+
+msgid ""
+"This website is subject to Swiss law. The exclusive place of jurisdiction for all disputes arising from or\n"
+"in connection with this website is Bern, Switzerland."
+msgstr ""
+"Ce site web est soumis au droit suisse. Le for juridique exclusif pour tous les litiges découlant de ou\n"
+"en relation avec ce site web est Berne, Suisse."
+
+# Contact page
+msgid "For questions, suggestions, or technical support, please contact us using one of the following methods:"
+msgstr "Pour des questions, suggestions ou support technique, veuillez nous contacter en utilisant l'une des méthodes suivantes:"
+
+msgid "General Inquiries"
+msgstr "Demandes générales"
+
+msgid "Fax:"
+msgstr "Fax:"
+
+msgid "Technical Support"
+msgstr "Support technique"
+
+msgid ""
+"For technical issues with the Prosignum platform or questions about Swiss E-ID authentication,\n"
+"please contact our technical support team."
+msgstr ""
+"Pour les problèmes techniques avec la plateforme Prosignum ou les questions concernant l'authentification Swiss E-ID,\n"
+"veuillez contacter notre équipe de support technique."
+
+msgid "Response Time:"
+msgstr "Temps de réponse:"
+
+msgid "Within 24 hours on business days"
+msgstr "Dans les 24 heures les jours ouvrables"
+
+msgid "Swiss E-ID (Swiyu) Support"
+msgstr "Support Swiss E-ID (Swiyu)"
+
+msgid ""
+"For questions specifically about your Swiss E-ID or the Swiyu wallet application,\n"
+"please visit the official Swiyu support resources."
+msgstr ""
+"Pour des questions spécifiques concernant votre Swiss E-ID ou l'application Swiyu wallet,\n"
+"veuillez consulter les ressources de support officielles de Swiyu."
+
+msgid "Documentation:"
+msgstr "Documentation:"
+
+msgid "Office Hours"
+msgstr "Heures d'ouverture"
+
+msgid "Monday - Friday: 08:00 - 17:00 CET"
+msgstr "Lundi - Vendredi: 08:00 - 17:00 CET"
+
+msgid "Closed on Swiss federal holidays"
+msgstr "Fermé les jours fériés fédéraux suisses"
+
+msgid "Emergency Contact"
+msgstr "Contact d'urgence"
+
+msgid ""
+"For urgent security issues or critical system failures, please contact our emergency hotline\n"
+"available 24/7."
+msgstr ""
+"Pour des problèmes de sécurité urgents ou des défaillances système critiques, veuillez contacter notre ligne d'urgence\n"
+"disponible 24h/24 et 7j/7."
+
+msgid "Emergency Hotline:"
+msgstr "Ligne d'urgence:"
+
+# Meta descriptions
+msgid "Prosignum - Swiss Federal Government e-Signature Platform"
+msgstr "Prosignum - Plateforme de signature électronique du gouvernement fédéral suisse"
+
+msgid "Authenticate using your Swiss E-ID to access the platform"
+msgstr "Authentifiez-vous avec votre Swiss E-ID pour accéder à la plateforme"

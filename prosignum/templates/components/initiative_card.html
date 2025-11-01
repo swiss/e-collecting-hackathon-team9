@@ -1,0 +1,86 @@
+{% load i18n %}
+{% comment %}
+Initiative card component for displaying active initiatives
+
+Parameters:
+- initiative: Initiative object (required)
+{% endcomment %}
+
+<div class="ch-card initiative-card" style="margin-bottom: var(--spacing-xl);">
+    {% if initiative.banner_image %}
+        <div class="initiative-banner" style="margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-lg)) var(--spacing-lg); overflow: hidden; border-bottom: 1px solid var(--ch-gray-light);">
+            <img src="{{ initiative.banner_image.url }}" alt="{{ initiative.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+    {% endif %}
+
+    <h2 class="ch-card-title" style="color: var(--ch-red-dark); margin-bottom: var(--spacing-md);">
+        {{ initiative.title }}
+    </h2>
+
+    <p style="color: var(--ch-gray-dark); margin-bottom: var(--spacing-lg); line-height: 1.6;">
+        {{ initiative.description }}
+    </p>
+
+    <!-- Collection Progress -->
+    <div class="initiative-progress" style="margin-bottom: var(--spacing-lg);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+            <span style="font-weight: 700; color: var(--ch-gray-dark);">
+                {% trans "Signatures collected:" %}
+            </span>
+            <span style="font-weight: 700; color: var(--ch-blue-primary);">
+                {{ initiative.get_total_signatures }} / {{ initiative.target_signatures }}
+            </span>
+        </div>
+
+        <!-- Progress bar -->
+        <div style="width: 100%; height: 12px; background-color: var(--ch-gray-light); border-radius: 6px; overflow: hidden;">
+            <div style="height: 100%; background-color: var(--ch-blue-primary); width: {{ initiative.get_progress_percentage }}%; transition: width var(--transition-base);"></div>
+        </div>
+
+        <div style="text-align: right; margin-top: var(--spacing-xs); font-size: var(--font-size-small); color: var(--ch-gray-medium);">
+            {{ initiative.get_progress_percentage }}% {% trans "reached" %}
+        </div>
+    </div>
+
+    <!-- Collection Period -->
+    <div class="initiative-dates" style="display: flex; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg); padding: var(--spacing-md); background-color: var(--ch-gray-bg); border-radius: 4px;">
+        <div style="flex: 1;">
+            <div style="font-size: var(--font-size-small); color: var(--ch-gray-medium); margin-bottom: var(--spacing-xs);">
+                {% trans "Collection starts:" %}
+            </div>
+            <div style="font-weight: 700; color: var(--ch-gray-dark);">
+                {{ initiative.collection_start_date|date:"d.m.Y H:i" }}
+            </div>
+        </div>
+        <div style="flex: 1;">
+            <div style="font-size: var(--font-size-small); color: var(--ch-gray-medium); margin-bottom: var(--spacing-xs);">
+                {% trans "Collection ends:" %}
+            </div>
+            <div style="font-weight: 700; color: var(--ch-gray-dark);">
+                {{ initiative.collection_end_date|date:"d.m.Y H:i" }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="initiative-actions" style="display: flex; gap: var(--spacing-md); flex-wrap: wrap; align-items: center;">
+        {% if user.is_authenticated %}
+            {% if already_signed %}
+                <button disabled
+                        class="ch-button ch-button--disabled"
+                        style="background-color: var(--ch-gray-light); color: var(--ch-gray-medium); cursor: not-allowed; border: none; padding: var(--spacing-sm) var(--spacing-lg); border-radius: 4px; font-weight: 700; opacity: 0.6;">
+                    ✓ {% trans "Already signed" %}
+                </button>
+            {% else %}
+                {% url 'sign_initiative' initiative.id as sign_url %}
+                {% include 'components/button.html' with text=_("Sign this initiative") url=sign_url type="primary" %}
+            {% endif %}
+        {% else %}
+            {% include 'components/button.html' with text=_("Sign") url="/swiyu/login/" type="primary" %}
+        {% endif %}
+
+        {% if initiative.url %}
+            {% include 'components/button.html' with text=_("More information") url=initiative.url type="secondary" extra_attrs='target="_blank" rel="noopener noreferrer"' %}
+        {% endif %}
+    </div>
+</div>

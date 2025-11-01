@@ -1,0 +1,80 @@
+{% load i18n %}
+
+{% comment %}
+Reusable form field component for CD Bund compliance
+
+Parameters:
+- field_type: Type of input - "text", "email", "password", "tel", "textarea", "select" (required)
+- name: Field name attribute (required)
+- label: Field label text (required)
+- value: Field value (optional)
+- placeholder: Placeholder text (optional)
+- required: Boolean, if true marks field as required (default: false)
+- disabled: Boolean, if true disables the field (default: false)
+- help_text: Help text below the field (optional)
+- error_text: Error message (optional)
+- options: For select fields, list of tuples [(value, label), ...] (optional)
+- extra_classes: Additional CSS classes (optional)
+- autocomplete: Autocomplete attribute value (optional)
+
+Usage examples:
+{% include 'components/form_field.html' with field_type="text" name="username" label="Username" required=True %}
+{% include 'components/form_field.html' with field_type="email" name="email" label="Email" help_text="We'll never share your email." %}
+{% include 'components/form_field.html' with field_type="textarea" name="message" label="Message" %}
+{% endcomment %}
+
+<div class="ch-form-group {{ extra_classes }}">
+    <label for="id_{{ name }}" class="ch-label">
+        {{ label }}
+        {% if required %}<span class="required" aria-label="{% trans 'required' %}">*</span>{% endif %}
+    </label>
+
+    {% if field_type == "textarea" %}
+        <textarea id="id_{{ name }}"
+                  name="{{ name }}"
+                  class="ch-textarea {% if error_text %}error{% endif %}"
+                  {% if placeholder %}placeholder="{{ placeholder }}"{% endif %}
+                  {% if required %}required aria-required="true"{% endif %}
+                  {% if disabled %}disabled{% endif %}
+                  {% if autocomplete %}autocomplete="{{ autocomplete }}"{% endif %}
+                  {% if error_text %}aria-describedby="error_{{ name }}"{% endif %}
+                  {% if help_text %}aria-describedby="help_{{ name }}"{% endif %}>{{ value|default:'' }}</textarea>
+
+    {% elif field_type == "select" %}
+        <select id="id_{{ name }}"
+                name="{{ name }}"
+                class="ch-select {% if error_text %}error{% endif %}"
+                {% if required %}required aria-required="true"{% endif %}
+                {% if disabled %}disabled{% endif %}
+                {% if error_text %}aria-describedby="error_{{ name }}"{% endif %}
+                {% if help_text %}aria-describedby="help_{{ name }}"{% endif %}>
+            {% if placeholder %}
+                <option value="" disabled {% if not value %}selected{% endif %}>{{ placeholder }}</option>
+            {% endif %}
+            {% for opt_value, opt_label in options %}
+                <option value="{{ opt_value }}" {% if value == opt_value %}selected{% endif %}>{{ opt_label }}</option>
+            {% endfor %}
+        </select>
+
+    {% else %}
+        <input type="{{ field_type|default:'text' }}"
+               id="id_{{ name }}"
+               name="{{ name }}"
+               class="ch-input {% if error_text %}error{% endif %}"
+               {% if value %}value="{{ value }}"{% endif %}
+               {% if placeholder %}placeholder="{{ placeholder }}"{% endif %}
+               {% if required %}required aria-required="true"{% endif %}
+               {% if disabled %}disabled{% endif %}
+               {% if autocomplete %}autocomplete="{{ autocomplete }}"{% endif %}
+               {% if error_text %}aria-describedby="error_{{ name }}"{% endif %}
+               {% if help_text %}aria-describedby="help_{{ name }}"{% endif %} />
+    {% endif %}
+
+    {% if help_text %}
+        <span id="help_{{ name }}" class="ch-help-text">{{ help_text }}</span>
+    {% endif %}
+
+    {% if error_text %}
+        <span id="error_{{ name }}" class="ch-error-text" role="alert">{{ error_text }}</span>
+    {% endif %}
+</div>

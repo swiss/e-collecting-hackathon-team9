@@ -1,0 +1,26 @@
+{% load i18n %}
+
+{% comment %}
+Language switcher component for CD Bund multilingual support
+Displays links to switch between German, French, Italian, and Romansh
+{% endcomment %}
+
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+
+<div class="ch-lang-switcher" role="navigation" aria-label="{% trans 'Language selection' %}">
+    {% for lang_code, lang_name in AVAILABLE_LANGUAGES %}
+        <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="language" value="{{ lang_code }}">
+            <input type="hidden" name="next" value="{{ request.path }}">
+            <button type="submit"
+                    class="ch-lang-button"
+                    {% if lang_code == CURRENT_LANGUAGE %}aria-current="true"{% endif %}
+                    lang="{{ lang_code }}"
+                    style="background: none; border: none; padding: var(--spacing-xs) var(--spacing-sm); font-family: var(--font-primary); font-size: var(--font-size-small); font-weight: 700; text-transform: uppercase; color: var(--ch-blue-primary); cursor: pointer; text-decoration: none; {% if lang_code == CURRENT_LANGUAGE %}color: var(--ch-red); text-decoration: underline;{% endif %}">
+                {{ lang_code|upper }}
+            </button>
+        </form>
+    {% endfor %}
+</div>

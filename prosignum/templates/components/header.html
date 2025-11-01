@@ -1,0 +1,39 @@
+{% load i18n static %}
+
+<header class="ch-header">
+    <a href="#main-content" class="skip-link">{% trans "Skip to main content" %}</a>
+
+    <div class="container ch-header-container">
+        <a href="{% url 'home' %}" class="ch-logo" aria-label="{% trans 'Swiss Confederation - Prosignum Home' %}">
+            <img src="{% static 'img/logo/BundLogo.svg' %}" alt="{% trans 'Swiss Confederation' %}" />
+            <span class="ch-org-name">
+                Prosignum
+            </span>
+        </a>
+
+        <nav class="ch-nav" aria-label="{% trans 'Main navigation' %}">
+            {% block navigation %}
+            <a href="{% url 'home' %}" {% if request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>
+                {% trans "Home" %}
+            </a>
+
+            {% if user.is_authenticated %}
+                <!-- Profile Icon for authenticated users -->
+                <a href="{% url 'profile' %}" class="ch-profile-link" {% if request.resolver_match.url_name == 'profile' %}aria-current="page"{% endif %} aria-label="{% trans 'Profile' %}">
+                    <svg class="ch-profile-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
+                    </svg>
+                    <span class="ch-profile-text">{% trans "Profile" %}</span>
+                </a>
+            {% else %}
+                <!-- Login button for non-authenticated users -->
+                <a href="{% url 'swiyu:login' %}" class="ch-button ch-button-primary" style="padding: var(--spacing-sm) var(--spacing-lg); margin-left: var(--spacing-sm);">
+                    {% trans "Login" %}
+                </a>
+            {% endif %}
+            {% endblock %}
+
+            {% include 'components/language_switcher.html' %}
+        </nav>
+    </div>
+</header>

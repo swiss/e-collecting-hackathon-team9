@@ -1,0 +1,19 @@
+services:
+  didgen:
+    build:
+      context: .
+      dockerfile: Dockerfile.didtoolbox
+    volumes:
+      - ./didtoolbox-keys:/root/.didtoolbox
+      - ./didtoolbox-output:/output
+    environment:
+      - REGISTRY_URL=https://identifier-reg.trust-infra.swiyu-int.admin.ch
+      - HOME=/root
+    command: >
+      sh -c "java -jar didtoolbox.jar create --identifier-registry-url $$REGISTRY_URL > /output/didlog.jsonl &&
+             echo 'DID generation complete!' &&
+             echo 'DID log saved to didtoolbox-output/didlog.jsonl' &&
+             echo 'Keys saved to didtoolbox-keys/' &&
+             cp -r /root/.didtoolbox/* /root/.didtoolbox/.??* /root/.didtoolbox/ 2>/dev/null || true &&
+             ls -la /root/.didtoolbox/ &&
+             cat /output/didlog.jsonl | grep '\"id\"' | head -1"

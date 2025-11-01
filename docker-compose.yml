@@ -1,0 +1,77 @@
+services:
+  postgres:
+    image: postgres:15
+    env_file:
+      - .env
+    environment:
+      POSTGRES_MULTIPLE_DATABASES: "${POSTGRES_DB},${DJANGO_DB_NAME}"
+      POSTGRES_USER: ${POSTGRES_ROOT_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_ROOT_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-databases.sh:/docker-entrypoint-initdb.d/init-databases.sh:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  verifier-service:
+    image: ghcr.io/swiyu-admin-ch/swiyu-verifier:latest
+    ports:
+      - "8080:8080"
+    environment:
+      EXTERNAL_URL: ${EXTERNAL_URL}
+      OPENID_CLIENT_METADATA_FILE: classpath:client_metadata.json
+      VERIFIER_DID: ${VERIFIER_DID}
+      DID_VERIFICATION_METHOD: ${DID_VERIFICATION_METHOD}
+      VERIFIER_NAME: ${VERIFIER_NAME}
+      # SAMPLE PLACEHOLDER KEY - DO NOT USE IN PRODUCTION!
+      # After running setup-swiyu-did.sh, create docker-compose.prod.yml
+      # to override this with your actual generated key
+      # See docker-compose.prod.yml.sample for the correct format
+      SIGNING_KEY: |
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstoAoGCCqGSM49
+        AwEHoUQDQgAE0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqr
+        stuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ABCD==
+        -----END EC PRIVATE KEY-----
+
+      # Persistence
+      POSTGRES_USER: ${POSTGRES_ROOT_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_ROOT_PASSWORD}
+      POSTGRES_DB: swiyu_verifier
+      POSTGRES_JDBC: jdbc:postgresql://postgres:5432/swiyu_verifier
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  django:
+    build:
+      context: ./prosignum
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./prosignum:/app
+      - django_static:/app/staticfiles
+      - django_media:/app/media
+      - ./AMTOVZ_CSV_LV95.csv:/app/AMTOVZ_CSV_LV95.csv:ro
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      verifier-service:
+        condition: service_started
+    restart: unless-stopped
+    command: sh -c "python manage.py migrate && python manage.py import_municipalities /app/AMTOVZ_CSV_LV95.csv || true && python manage.py runserver 0.0.0.0:8000"
+
+volumes:
+  postgres_data:
+  django_static:
+  django_media:

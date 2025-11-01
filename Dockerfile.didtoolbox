@@ -1,0 +1,19 @@
+FROM openjdk:21-slim
+
+WORKDIR /didtoolbox
+
+# Download the executable JAR with dependencies from Maven Central
+RUN apt-get update && apt-get install -y curl && \
+    curl -L -o didtoolbox.jar \
+    "https://repo1.maven.org/maven2/io/github/swiyu-admin-ch/didtoolbox/1.3.1/didtoolbox-1.3.1-jar-with-dependencies.jar" && \
+    ls -lh didtoolbox.jar && \
+    java -jar didtoolbox.jar --help && \
+    apt-get remove -y curl && \
+    apt-get autoremove -y && \
+    rm -rf /var/lib/apt/lists/*
+
+# Create output directory
+RUN mkdir -p /output
+
+# Default command shows help
+CMD ["java", "-jar", "didtoolbox.jar", "--help"]

@@ -1,0 +1,32 @@
+{% comment %}
+Reusable button component for CD Bund compliance
+
+Parameters:
+- text: Button text (required)
+- url: Link URL (optional, makes it an <a> tag)
+- type: Button type - "primary", "secondary", "link" (default: "primary")
+- submit: Boolean, if true renders as submit button (default: false)
+- extra_classes: Additional CSS classes (optional)
+- aria_label: ARIA label for accessibility (optional)
+
+Usage examples:
+{% include 'components/button.html' with text="Submit" type="primary" submit=True %}
+{% include 'components/button.html' with text="Cancel" url="/cancel/" type="secondary" %}
+{% include 'components/button.html' with text="Learn more" url="/info/" type="link" %}
+{% endcomment %}
+
+{% if url %}
+    <a href="{{ url }}"
+       class="ch-button ch-button-{{ type|default:'primary' }} {{ extra_classes }}"
+       {% if aria_label %}aria-label="{{ aria_label }}"{% endif %}
+       {{ extra_attrs }}>
+        {{ text }}
+    </a>
+{% else %}
+    <button type="{% if submit %}submit{% else %}button{% endif %}"
+            class="ch-button ch-button-{{ type|default:'primary' }} {{ extra_classes }}"
+            {% if aria_label %}aria-label="{{ aria_label }}"{% endif %}
+            {{ extra_attrs }}>
+        {{ text }}
+    </button>
+{% endif %}
