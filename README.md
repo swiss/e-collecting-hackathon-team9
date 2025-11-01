@@ -83,7 +83,8 @@ flowchart TD
 `TODO`
 
 ## Potenzielle Erweiterung in Richtung Phase 2
-In 
+
+Die skizzierten Ideen zur Erweiterung in Phase 2 befinden sich [hier](/docs/phase2.md).
 
 ## Topics addressed
 The following table discusses the topics presented in the [guidelines](https://www.bk.admin.ch/bk/de/home/politische-rechte/e-collecting/aktuelles.html).*
