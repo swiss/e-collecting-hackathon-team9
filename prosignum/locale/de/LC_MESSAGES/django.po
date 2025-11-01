@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Prosignum 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-11 09:00+0100\n"
+"POT-Creation-Date: 2025-11-01 16:38+0100\n"
 "PO-Revision-Date: 2025-01-11 09:00+0100\n"
 "Last-Translator: Swiss Federal Chancellery\n"
 "Language-Team: German\n"
@@ -17,534 +17,3090 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # Navigation and common terms
+#: core/templates/core/home.html:4 templates/components/header.html:17
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_icon.html:7
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_icon.html:9
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_icon.html:11
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_logo.html:5
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_logo.html:7
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_logo.html:9
 msgid "Home"
 msgstr "Startseite"
 
-msgid "Swiyu Login"
-msgstr "Swiyu Anmeldung"
+#: core/templates/core/home.html:6
+msgid ""
+"Prosignum - Secure, federated signature collection for Swiss e-democracy"
+msgstr ""
+"Prosignum - Sichere, föderierte Unterschriftensammlung für die Schweizer E-"
+"Demokratie"
 
-msgid "Login"
-msgstr "Anmelden"
+#: core/templates/core/home.html:12
+#| msgid "Sign Initiative"
+msgid "Active Initiatives"
+msgstr "Aktive Initiativen"
 
-msgid "Sign"
-msgstr "Unterschreiben"
-
-msgid "Login with Swiss E-ID"
-msgstr "Anmelden mit Swiss E-ID"
-
-msgid "Profile"
-msgstr "Profil"
-
+#: core/templates/core/profile.html:4 core/templates/core/profile.html:9
 msgid "My Profile"
 msgstr "Mein Profil"
 
+#: core/templates/core/profile.html:6
 msgid "User profile - Prosignum"
 msgstr "Benutzerprofil - Prosignum"
 
-msgid "User Information"
-msgstr "Benutzerinformationen"
-
+#: core/templates/core/profile.html:10
 msgid "Your account information"
 msgstr "Ihre Kontoinformationen"
 
-msgid "Administration Access"
-msgstr "Verwaltungszugang"
+#: core/templates/core/profile.html:15
+msgid "User Information"
+msgstr "Benutzerinformationen"
 
-msgid "Logout"
-msgstr "Abmelden"
-
-msgid "Back to Home"
-msgstr "Zurück zur Startseite"
-
-msgid "Sign Initiative"
-msgstr "Initiative unterschreiben"
-
-msgid "Sign this initiative"
-msgstr "Diese Initiative unterschreiben"
-
-msgid "Sign the initiative"
-msgstr "Initiative unterschreiben"
-
-msgid "This initiative is not currently accepting signatures."
-msgstr "Diese Initiative nimmt derzeit keine Unterschriften entgegen."
-
-msgid "Participant profile not found. Please contact support."
-msgstr "Teilnehmerprofil nicht gefunden. Bitte kontaktieren Sie den Support."
-
-msgid "You have already signed this initiative."
-msgstr "Sie haben diese Initiative bereits unterschrieben."
-
-msgid "Please fill in all required fields."
-msgstr "Bitte füllen Sie alle erforderlichen Felder aus."
-
-msgid "Your signature has been submitted and is pending review by your municipality."
-msgstr "Ihre Unterschrift wurde eingereicht und wartet auf die Prüfung durch Ihre Gemeinde."
-
-msgid "Initiative Details"
-msgstr "Initiativ-Details"
-
-msgid "Your Signature"
-msgstr "Ihre Unterschrift"
-
-msgid "The following information from your Swiss E-ID will be used for your signature:"
-msgstr "Die folgenden Informationen aus Ihrer Swiss E-ID werden für Ihre Unterschrift verwendet:"
-
-msgid "Municipality"
-msgstr "Gemeinde"
-
-msgid "Political Municipality"
-msgstr "Politische Gemeinde"
-
-msgid "Select your municipality"
-msgstr "Wählen Sie Ihre Gemeinde"
-
-msgid "Type to search municipality..."
-msgstr "Tippen um Gemeinde zu suchen..."
-
-msgid "Street and House Number"
-msgstr "Strasse und Hausnummer"
-
-msgid "e.g. Bundesgasse 3"
-msgstr "z.B. Bundesgasse 3"
-
-msgid "Postal Code"
-msgstr "PLZ"
-
-msgid "e.g. 3003"
-msgstr "z.B. 3003"
-
-msgid "Given Names:"
-msgstr "Vornamen:"
-
-msgid "By signing this initiative, you confirm that all information provided is accurate and that you are eligible to participate in this signature collection."
-msgstr "Mit der Unterzeichnung dieser Initiative bestätigen Sie, dass alle angegebenen Informationen korrekt sind und dass Sie berechtigt sind, an dieser Unterschriftensammlung teilzunehmen."
-
-msgid "Submit Signature"
-msgstr "Unterschrift einreichen"
-
-msgid "Cancel"
-msgstr "Abbrechen"
-
-msgid "Error"
-msgstr "Fehler"
-
-msgid "Contact"
-msgstr "Kontakt"
-
-msgid "Legal Notice"
-msgstr "Rechtliche Hinweise"
-
-msgid "Impressum"
-msgstr "Impressum"
-
-# Organizations and entities
-msgid "Swiss Confederation"
-msgstr "Schweizerische Eidgenossenschaft"
-
-msgid "Federal Chancellery"
-msgstr "Bundeskanzlei"
-
-msgid "Bundeskanzlei | Prosignum"
-msgstr "Bundeskanzlei | Prosignum"
-
-msgid "Swiss Confederation - Prosignum Home"
-msgstr "Schweizerische Eidgenossenschaft - Prosignum Startseite"
-
-# Accessibility
-msgid "Skip to main content"
-msgstr "Zum Hauptinhalt springen"
-
-msgid "Main navigation"
-msgstr "Hauptnavigation"
-
-msgid "Footer navigation"
-msgstr "Fussnavigation"
-
-msgid "Language selection"
-msgstr "Sprachauswahl"
-
-msgid "required"
-msgstr "erforderlich"
-
-msgid "Loading"
-msgstr "Lädt"
-
-msgid "Close alert"
-msgstr "Meldung schliessen"
-
-# User interface
-msgid "Welcome back!"
-msgstr "Willkommen zurück!"
-
+#: core/templates/core/profile.html:18
 msgid "Logged in as:"
 msgstr "Angemeldet als:"
 
+#: core/templates/core/profile.html:23
 msgid "Swiss E-ID Verified Details"
 msgstr "Verifizierte Swiss E-ID Angaben"
 
+#: core/templates/core/profile.html:28
+#: core/templates/core/sign_initiative.html:65
 msgid "Name:"
 msgstr "Name:"
 
+#: core/templates/core/profile.html:36
+#: core/templates/core/sign_initiative.html:81
 msgid "Birth Date:"
 msgstr "Geburtsdatum:"
 
-msgid "Birth Place:"
-msgstr "Geburtsort:"
-
+#: core/templates/core/profile.html:44
 msgid "AHV Number:"
 msgstr "AHV-Nummer:"
 
+#: core/templates/core/profile.html:52
 msgid "Verified At:"
 msgstr "Verifiziert am:"
 
-msgid "Go to Admin Panel"
-msgstr "Zum Admin-Bereich"
+#: core/templates/core/profile.html:64
+msgid "Administration Access"
+msgstr "Verwaltungszugang"
 
-# Prosignum specific
-msgid "Prosignum"
-msgstr "Prosignum"
+#: core/templates/core/profile.html:66
+msgid "Logout"
+msgstr "Abmelden"
 
-msgid "Prosignum - Secure, federated signature collection for Swiss e-democracy"
-msgstr "Prosignum - Sichere, föderierte Unterschriftensammlung für die Schweizer E-Demokratie"
+#: core/templates/core/profile.html:71 swiyu/templates/swiyu/login.html:95
+#: templates/pages/contact.html:80 templates/pages/impressum.html:69
+#: templates/pages/legal.html:98
+msgid "Back to Home"
+msgstr "Zurück zur Startseite"
 
-msgid "Secure, federated signature collection for Swiss e-democracy"
-msgstr "Sichere, föderierte Unterschriftensammlung für die Schweizer E-Demokratie"
+#: core/templates/core/sign_initiative.html:4
+#: core/templates/core/sign_initiative.html:9
+msgid "Sign Initiative"
+msgstr "Initiative unterschreiben"
 
-msgid "Please authenticate using your Swiss E-ID to access the platform."
-msgstr "Bitte authentifizieren Sie sich mit Ihrer Swiss E-ID, um auf die Plattform zuzugreifen."
+#: core/templates/core/sign_initiative.html:6
+msgid "Sign the initiative"
+msgstr "Initiative unterschreiben"
 
-msgid "Platform Features"
-msgstr "Plattform-Funktionen"
+#: core/templates/core/sign_initiative.html:15
+msgid "Initiative Details"
+msgstr "Initiativ-Details"
 
-msgid "Initiative Management"
-msgstr "Initiativen-Verwaltung"
+#: core/templates/core/sign_initiative.html:20
+msgid "Official Documentation"
+msgstr "Offizielle Dokumentation"
 
-msgid "Create and manage referendum initiatives with full lifecycle tracking"
-msgstr "Erstellen und verwalten Sie Volksinitiativen mit vollständiger Lebenszyklus-Verfolgung"
+#: core/templates/core/sign_initiative.html:36
+msgid "Initiative Committee"
+msgstr "Initiativkomitee"
 
-msgid "Digital Signatures"
-msgstr "Digitale Unterschriften"
+#: core/templates/core/sign_initiative.html:43
+msgid ""
+"Only eligible voters who are registered in a Swiss municipality and have "
+"voting rights in federal matters can sign this initiative."
+msgstr ""
+"Auf dieser Liste können nur Stimmberechtigte unterzeichnen, die in einer "
+"politischen Gemeinde in eidgenössischen Angelegenheiten stimmberechtigt sind."
 
-msgid "Collect signatures with Swiss E-ID authentication and municipality verification"
-msgstr "Sammeln Sie Unterschriften mit Swiss E-ID-Authentifizierung und Gemeinde-Verifizierung"
+#: core/templates/core/sign_initiative.html:47
+msgid ""
+"Anyone who bribes or allows themselves to be bribed in connection with a "
+"signature collection, or who falsifies the result of a signature collection "
+"for a popular initiative, is punishable under Art. 281 or Art. 282 of the "
+"Criminal Code."
+msgstr ""
+"Wer bei einer Unterschriftensammlung besticht oder sich bestechen lässt oder "
+"wer das Ergebnis einer Unterschriftensammlung für eine Volksinitiative "
+"fälscht, macht sich strafbar nach Art. 281 beziehungsweise nach Art. 282 des "
+"Strafgesetzbuches."
 
-msgid "Municipality Review"
-msgstr "Gemeinde-Prüfung"
+#: core/templates/core/sign_initiative.html:51
+msgid "Collection Deadline:"
+msgstr "Ablauf der Sammelfrist:"
 
-msgid "Municipality-based review workflow with accept/reject capabilities"
-msgstr "Gemeindebasierter Prüfungsablauf mit Annahme-/Ablehnungsfunktion"
+#: core/templates/core/sign_initiative.html:56
+msgid "Your Signature"
+msgstr "Ihre Unterschrift"
 
-msgid "Statistics & Reports"
-msgstr "Statistiken & Berichte"
+#: core/templates/core/sign_initiative.html:59
+msgid ""
+"The following information from your Swiss E-ID will be used for your "
+"signature:"
+msgstr ""
+"Die folgenden Informationen aus Ihrer Swiss E-ID werden für Ihre "
+"Unterschrift verwendet:"
 
-msgid "View signature totals by municipality while maintaining privacy"
-msgstr "Zeigen Sie Unterschriften-Totale nach Gemeinde an und wahren Sie dabei die Privatsphäre"
+#: core/templates/core/sign_initiative.html:73
+msgid "Given Names:"
+msgstr "Vornamen:"
 
-msgid "Powered by Swiyu Swiss E-ID | Built for e-Collecting Hackathon 2025"
-msgstr "Betrieben mit Swiyu Swiss E-ID | Entwickelt für den e-Collecting Hackathon 2025"
+#: core/templates/core/sign_initiative.html:93
+msgid "Street and House Number"
+msgstr "Strasse und Hausnummer"
 
-# Login page
-msgid "Scan the QR code below with your Swiyu wallet app"
-msgstr "Scannen Sie den QR-Code mit Ihrer Swiyu Wallet App"
+#: core/templates/core/sign_initiative.html:93
+msgid "e.g. Bundesgasse 3"
+msgstr "z.B. Bundesgasse 3"
 
-msgid "Instructions: 1. Open your Swiyu wallet app on your smartphone, 2. Scan the QR code below, 3. Approve the authentication request in the app"
-msgstr "Anleitung: 1. Öffnen Sie die Swiyu Wallet App auf Ihrem Smartphone, 2. Scannen Sie den QR-Code unten, 3. Bestätigen Sie die Authentifizierungsanfrage in der App"
+#: core/templates/core/sign_initiative.html:98
+msgid "Postal Code"
+msgstr "PLZ"
 
-msgid "QR Code for authentication"
-msgstr "QR-Code für Authentifizierung"
+#: core/templates/core/sign_initiative.html:98
+msgid "e.g. 3003"
+msgstr "z.B. 3003"
 
-msgid "Waiting for you to scan the QR code..."
-msgstr "Warte auf das Scannen des QR-Codes..."
+#: core/templates/core/sign_initiative.html:102
+msgid "Political Municipality"
+msgstr "Politische Gemeinde"
 
-msgid "QR code expires in"
-msgstr "QR-Code läuft ab in"
+#: core/templates/core/sign_initiative.html:102
+#: templates/components/form_field.html:29
+msgid "required"
+msgstr "erforderlich"
 
-msgid "seconds"
-msgstr "Sekunden"
+#: core/templates/core/sign_initiative.html:108
+msgid "Please enter postal code first"
+msgstr "Bitte zuerst PLZ eingeben"
 
-msgid "For testing: Auto-completes after 5 seconds with mock data"
-msgstr "Für Tests: Vervollständigt automatisch nach 5 Sekunden mit Testdaten"
+#: core/templates/core/sign_initiative.html:123
+msgid ""
+"By signing this initiative, you confirm that all information provided is "
+"accurate and that you are eligible to participate in this signature "
+"collection."
+msgstr ""
+"Mit der Unterzeichnung dieser Initiative bestätigen Sie, dass alle "
+"angegebenen Informationen korrekt sind und dass Sie berechtigt sind, an "
+"dieser Unterschriftensammlung teilzunehmen."
 
-msgid "Authentication successful! Redirecting..."
-msgstr "Authentifizierung erfolgreich! Weiterleitung..."
+#: core/templates/core/sign_initiative.html:127
+msgid "Submit Signature"
+msgstr "Unterschrift einreichen"
 
-msgid "Authentication failed:"
-msgstr "Authentifizierung fehlgeschlagen:"
+#: core/templates/core/sign_initiative.html:128
+msgid "Cancel"
+msgstr "Abbrechen"
 
-msgid "Unknown error"
-msgstr "Unbekannter Fehler"
+#: core/views.py:76
+msgid "This initiative is not currently accepting signatures."
+msgstr "Diese Initiative nimmt derzeit keine Unterschriften entgegen."
 
-msgid "QR code expired. Please"
-msgstr "QR-Code abgelaufen. Bitte"
+#: core/views.py:83
+msgid "Participant profile not found. Please contact support."
+msgstr "Teilnehmerprofil nicht gefunden. Bitte kontaktieren Sie den Support."
 
-msgid "refresh"
-msgstr "aktualisieren"
+#: core/views.py:93
+msgid "You have already signed this initiative."
+msgstr "Sie haben diese Initiative bereits unterschrieben."
 
-msgid "to try again."
-msgstr "um es erneut zu versuchen."
+#: core/views.py:103
+msgid "Please fill in all required fields."
+msgstr "Bitte füllen Sie alle erforderlichen Felder aus."
+
+#: core/views.py:124
+msgid ""
+"Your signature has been submitted and is pending review by your municipality."
+msgstr ""
+"Ihre Unterschrift wurde eingereicht und wartet auf die Prüfung durch Ihre "
+"Gemeinde."
+
+#: swiyu/templates/swiyu/error.html:4 swiyu/templates/swiyu/error.html:10
+msgid "Error"
+msgstr "Fehler"
 
 # Error page
+#: swiyu/templates/swiyu/error.html:6
 msgid "An error occurred during authentication"
 msgstr "Bei der Authentifizierung ist ein Fehler aufgetreten"
 
+#: swiyu/templates/swiyu/error.html:12
 msgid "An error occurred during authentication:"
 msgstr "Bei der Authentifizierung ist ein Fehler aufgetreten:"
 
+#: swiyu/templates/swiyu/error.html:15
 msgid "Try Again"
 msgstr "Erneut versuchen"
 
+#: swiyu/templates/swiyu/error.html:16
 msgid "Go to Homepage"
 msgstr "Zur Startseite"
 
-# Legal pages
-msgid "Publisher"
-msgstr "Herausgeber"
+#: swiyu/templates/swiyu/login.html:4 swiyu/templates/swiyu/login.html:64
+msgid "Login with Swiss E-ID"
+msgstr "Anmelden mit Swiss E-ID"
 
-msgid "Federal Palace East Wing"
-msgstr "Bundeshaus Ost"
-
-msgid "Bern"
-msgstr "Bern"
-
-msgid "Switzerland"
-msgstr "Schweiz"
-
-msgid "Liability"
-msgstr "Haftung"
-
-msgid ""
-"Although the Federal Chancellery pays great attention to the accuracy of the information published on the Internet,\n"
-"it cannot accept any liability for the accuracy, correctness, currentness, reliability and completeness of this information."
+#: swiyu/templates/swiyu/login.html:6
+msgid "Authenticate using your Swiss E-ID to access the platform"
 msgstr ""
-"Die Bundeskanzlei legt grossen Wert auf die Richtigkeit der im Internet veröffentlichten Informationen,\n"
-"kann jedoch keinerlei Gewähr für die Genauigkeit, Korrektheit, Aktualität, Zuverlässigkeit und Vollständigkeit dieser Informationen übernehmen."
+"Authentifizieren Sie sich mit Ihrer Swiss E-ID, um auf die Plattform "
+"zuzugreifen"
 
+# Login page
+#: swiyu/templates/swiyu/login.html:66
+msgid "Scan the QR code below with your Swiyu wallet app"
+msgstr "Scannen Sie den QR-Code mit Ihrer Swiyu Wallet App"
+
+#: swiyu/templates/swiyu/login.html:70
+msgid "Instructions"
+msgstr "Anleitung"
+
+#: swiyu/templates/swiyu/login.html:73
+msgid "Open your Swiyu wallet app on your smartphone"
+msgstr "Öffnen Sie die Swiyu Wallet App auf Ihrem Smartphone"
+
+#: swiyu/templates/swiyu/login.html:74
+msgid "Scan the QR code below"
+msgstr "Scannen Sie den QR-Code unten"
+
+#: swiyu/templates/swiyu/login.html:75
+msgid "Approve the authentication request in the app"
+msgstr "Bestätigen Sie die Authentifizierungsanfrage in der App"
+
+#: swiyu/templates/swiyu/login.html:81
+msgid "QR Code for authentication"
+msgstr "QR-Code für Authentifizierung"
+
+#: swiyu/templates/swiyu/login.html:85
+msgid "Loading"
+msgstr "Lädt"
+
+#: swiyu/templates/swiyu/login.html:86
+msgid "Waiting for you to scan the QR code..."
+msgstr "Warte auf das Scannen des QR-Codes..."
+
+#: swiyu/templates/swiyu/login.html:90
+msgid "QR code expires in"
+msgstr "QR-Code läuft ab in"
+
+#: swiyu/templates/swiyu/login.html:90
+msgid "seconds"
+msgstr "Sekunden"
+
+#: swiyu/templates/swiyu/login.html:91
+msgid "For testing: Auto-completes after 5 seconds with mock data"
+msgstr "Für Tests: Vervollständigt automatisch nach 5 Sekunden mit Testdaten"
+
+#: swiyu/templates/swiyu/login.html:113
+msgid "Authentication successful! Redirecting..."
+msgstr "Authentifizierung erfolgreich! Weiterleitung..."
+
+#: swiyu/templates/swiyu/login.html:119
+msgid "Authentication failed:"
+msgstr "Authentifizierung fehlgeschlagen:"
+
+#: swiyu/templates/swiyu/login.html:119
+msgid "Unknown error"
+msgstr "Unbekannter Fehler"
+
+#: swiyu/templates/swiyu/login.html:122
+msgid "QR code expired. Please"
+msgstr "QR-Code abgelaufen. Bitte"
+
+#: swiyu/templates/swiyu/login.html:122
+msgid "refresh"
+msgstr "aktualisieren"
+
+#: swiyu/templates/swiyu/login.html:122
+msgid "to try again."
+msgstr "um es erneut zu versuchen."
+
+# Organizations and entities
+#: templates/base.html:9 templates/components/footer.html:8
+#: templates/components/header.html:8
+msgid "Swiss Confederation"
+msgstr "Schweizerische Eidgenossenschaft"
+
+# Meta descriptions
+#: templates/base.html:11
+msgid "Prosignum - Swiss Federal Government e-Signature Platform"
+msgstr "Prosignum - E-Signatur-Plattform der Schweizerischen Eidgenossenschaft"
+
+#: templates/base.html:12 templates/components/footer.html:10
+msgid "Federal Chancellery"
+msgstr "Bundeskanzlei"
+
+#: templates/components/alert.html:29
+msgid "Close alert"
+msgstr "Meldung schliessen"
+
+#: templates/components/footer.html:14
+msgid "Footer navigation"
+msgstr "Fussnavigation"
+
+#: templates/components/footer.html:15 templates/pages/legal.html:4
+#: templates/pages/legal.html:7
+msgid "Legal Notice"
+msgstr "Rechtliche Hinweise"
+
+#: templates/components/footer.html:16 templates/pages/impressum.html:4
+#: templates/pages/impressum.html:7
+msgid "Impressum"
+msgstr "Impressum"
+
+#: templates/components/footer.html:17 templates/pages/contact.html:4
+#: templates/pages/contact.html:7 templates/pages/impressum.html:21
+msgid "Contact"
+msgstr "Kontakt"
+
+# Accessibility
+#: templates/components/header.html:4
+msgid "Skip to main content"
+msgstr "Zum Hauptinhalt springen"
+
+#: templates/components/header.html:7
+msgid "Swiss Confederation - Prosignum Home"
+msgstr "Schweizerische Eidgenossenschaft - Prosignum Startseite"
+
+#: templates/components/header.html:14
+msgid "Main navigation"
+msgstr "Hauptnavigation"
+
+#: templates/components/header.html:22 templates/components/header.html:26
+msgid "Profile"
+msgstr "Profil"
+
+#: templates/components/header.html:31
+msgid "Login"
+msgstr "Anmelden"
+
+#: templates/components/initiative_card.html:28
+msgid "Signatures collected:"
+msgstr "Gesammelte Unterschriften:"
+
+#: templates/components/initiative_card.html:41
+msgid "reached"
+msgstr "erreicht"
+
+#: templates/components/initiative_card.html:49
+#| msgid "Collection Deadline:"
+msgid "Collection starts:"
+msgstr "Sammlung beginnt:"
+
+#: templates/components/initiative_card.html:57
+#| msgid "Collection Deadline:"
+msgid "Collection ends:"
+msgstr "Sammlung endet:"
+
+#: templates/components/initiative_card.html:72
+msgid "Already signed"
+msgstr "Bereits unterschrieben"
+
+#: templates/components/initiative_card.html:76
+msgid "Sign this initiative"
+msgstr "Diese Initiative unterschreiben"
+
+#: templates/components/initiative_card.html:79
+msgid "Sign"
+msgstr "Unterschreiben"
+
+#: templates/components/initiative_card.html:83
+#| msgid "User Information"
+msgid "More information"
+msgstr "Weitere Informationen"
+
+#: templates/components/language_switcher.html:11
+msgid "Language selection"
+msgstr "Sprachauswahl"
+
+# Contact page
+#: templates/pages/contact.html:9
 msgid ""
-"The Federal Chancellery expressly reserves the right to change, delete or temporarily not publish the contents in whole\n"
-"or in part at any time and without prior notice."
+"For questions, suggestions, or technical support, please contact us using "
+"one of the following methods:"
 msgstr ""
-"Die Bundeskanzlei behält sich ausdrücklich vor, die Inhalte jederzeit ganz oder teilweise zu ändern, zu löschen\n"
-"oder zeitweise nicht zu veröffentlichen, und zwar ohne vorherige Ankündigung."
+"Für Fragen, Anregungen oder technischen Support kontaktieren Sie uns bitte "
+"über eine der folgenden Möglichkeiten:"
 
-msgid ""
-"Liability claims regarding damage caused by the use of any information provided, including any kind of information\n"
-"which is incomplete or incorrect, will therefore be rejected."
-msgstr ""
-"Haftungsansprüche wegen Schäden, die durch die Nutzung der bereitgestellten Informationen entstanden sind,\n"
-"einschliesslich unvollständiger oder fehlerhafter Informationen, werden daher abgelehnt."
+#: templates/pages/contact.html:12 templates/pages/impressum.html:12
+#: templates/pages/impressum.html:32 templates/pages/legal.html:12
+#, fuzzy
+#| msgid "Federal Chancellery"
+msgid "Swiss Federal Chancellery"
+msgstr "Bundeskanzlei"
 
-msgid "References and Links"
-msgstr "Verweise und Links"
-
-msgid ""
-"References and links to third party websites lie outside our area of responsibility. Access to and use of such\n"
-"websites occur entirely at the user's own risk. The Federal Chancellery explicitly states that it has no influence\n"
-"whatsoever on the design, content and offerings of linked sites."
-msgstr ""
-"Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Der Zugriff und die Nutzung solcher\n"
-"Webseiten erfolgen auf eigene Gefahr des Nutzers. Die Bundeskanzlei erklärt ausdrücklich, dass sie keinerlei Einfluss\n"
-"auf die Gestaltung, den Inhalt und die Angebote der verknüpften Seiten hat."
-
-msgid ""
-"Information and services offered by linked sites are entirely the responsibility of the respective third parties.\n"
-"No liability can be accepted in respect of the content of such websites."
-msgstr ""
-"Informationen und Dienstleistungen von verknüpften Webseiten liegen vollumfänglich in der Verantwortung der jeweiligen Dritten.\n"
-"Es wird keinerlei Haftung für den Inhalt solcher Webseiten übernommen."
-
-msgid "Data Protection"
-msgstr "Datenschutz"
-
-msgid ""
-"Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation\n"
-"(Data Protection Act, DPA), everyone has the right to protection of their privacy as well as protection from misuse\n"
-"of their personal data."
-msgstr ""
-"Gestützt auf Artikel 13 der Schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes\n"
-"(Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch\n"
-"ihrer persönlichen Daten."
-
-msgid ""
-"The operators of these pages take the protection of your personal data very seriously. We treat your personal data\n"
-"confidentially and in accordance with the statutory data protection regulations and this privacy policy."
-msgstr ""
-"Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten\n"
-"vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
-
-msgid "Copyright"
-msgstr "Urheberrecht"
-
-msgid ""
-"Copyright, Swiss Confederation. Information on the Federal Administration's websites is made available to the public."
-msgstr ""
-"Urheberrecht, Schweizerische Eidgenossenschaft. Informationen auf den Webseiten der Bundesverwaltung werden der Öffentlichkeit zugänglich gemacht."
-
-msgid ""
-"Downloading or copying of texts, illustrations, photographs or other data does not entail any transfer of rights\n"
-"to the content."
-msgstr ""
-"Das Herunterladen oder Kopieren von Texten, Illustrationen, Fotografien oder anderen Daten führt nicht zu einer Übertragung von Rechten\n"
-"an den Inhalten."
-
-msgid ""
-"The copyright and all other rights relating to texts, illustrations, photographs and other data placed on the\n"
-"Federal Administration's websites are the exclusive property of the Swiss Confederation or the expressly named\n"
-"rights holders. Any reproduction requires the prior written consent of the copyright holder."
-msgstr ""
-"Das Urheberrecht und alle anderen Rechte an Texten, Illustrationen, Fotografien und anderen Daten auf den\n"
-"Webseiten der Bundesverwaltung sind ausschliessliches Eigentum der Schweizerischen Eidgenossenschaft oder der ausdrücklich genannten\n"
-"Rechtsinhaber. Jede Vervielfältigung bedarf der vorherigen schriftlichen Zustimmung des Urheberrechtsinhabers."
-
-# Impressum page
-msgid "Publisher and Editor"
-msgstr "Herausgeber und Redaktion"
-
+#: templates/pages/contact.html:14 templates/pages/impressum.html:13
 msgid "Information and Communication Services ICS"
 msgstr "Informations- und Kommunikationsdienste IKD"
 
-msgid "Email:"
-msgstr "E-Mail:"
+#: templates/pages/contact.html:15 templates/pages/impressum.html:14
+#: templates/pages/legal.html:13
+msgid "Federal Palace East Wing"
+msgstr "Bundeshaus Ost"
 
-msgid "Phone:"
-msgstr "Telefon:"
+#: templates/pages/contact.html:16 templates/pages/impressum.html:15
+#: templates/pages/impressum.html:34 templates/pages/impressum.html:44
+#: templates/pages/legal.html:14
+msgid "Bern"
+msgstr "Bern"
 
-msgid "Website:"
-msgstr "Webseite:"
+#: templates/pages/contact.html:17 templates/pages/impressum.html:16
+#: templates/pages/impressum.html:35 templates/pages/impressum.html:45
+#: templates/pages/legal.html:15
+msgid "Switzerland"
+msgstr "Schweiz"
 
-msgid "Responsible for Content"
-msgstr "Verantwortlich für Inhalte"
-
-msgid "Bundesgasse 3"
-msgstr "Bundesgasse 3"
-
-msgid "Technical Operation"
-msgstr "Technischer Betrieb"
-
-msgid "Federal Office of Information Technology, Systems and Telecommunication FOITT"
-msgstr "Bundesamt für Informatik und Telekommunikation BIT"
-
-msgid "Monbijoustrasse 74"
-msgstr "Monbijoustrasse 74"
-
-msgid "Design and Implementation"
-msgstr "Design und Umsetzung"
-
-msgid "Prosignum Platform"
-msgstr "Prosignum Plattform"
-
-msgid "Built for e-Collecting Hackathon 2025"
-msgstr "Entwickelt für den e-Collecting Hackathon 2025"
-
-msgid "Using Swiss Federal Government Corporate Design (CD Bund)"
-msgstr "Unter Verwendung des Corporate Designs des Bundes (CD Bund)"
-
-msgid "Applicable Law"
-msgstr "Anwendbares Recht"
-
-msgid ""
-"This website is subject to Swiss law. The exclusive place of jurisdiction for all disputes arising from or\n"
-"in connection with this website is Bern, Switzerland."
-msgstr ""
-"Diese Webseite untersteht schweizerischem Recht. Ausschliesslicher Gerichtsstand für alle Streitigkeiten aus oder\n"
-"im Zusammenhang mit dieser Webseite ist Bern, Schweiz."
-
-# Contact page
-msgid "For questions, suggestions, or technical support, please contact us using one of the following methods:"
-msgstr "Für Fragen, Anregungen oder technischen Support kontaktieren Sie uns bitte über eine der folgenden Möglichkeiten:"
-
+#: templates/pages/contact.html:22
 msgid "General Inquiries"
 msgstr "Allgemeine Anfragen"
 
+#: templates/pages/contact.html:24 templates/pages/contact.html:39
+#: templates/pages/impressum.html:23
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: templates/pages/contact.html:25 templates/pages/impressum.html:24
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: templates/pages/contact.html:26
 msgid "Fax:"
 msgstr "Fax:"
 
+#: templates/pages/contact.html:31
 msgid "Technical Support"
 msgstr "Technischer Support"
 
+#: templates/pages/contact.html:33
+#, fuzzy
+#| msgid ""
+#| "For technical issues with the Prosignum platform or questions about Swiss "
+#| "E-ID authentication,\n"
+#| "please contact our technical support team."
 msgid ""
-"For technical issues with the Prosignum platform or questions about Swiss E-ID authentication,\n"
-"please contact our technical support team."
+"\n"
+"        For technical issues with the Prosignum platform or questions about "
+"Swiss E-ID authentication,\n"
+"        please contact our technical support team.\n"
+"        "
 msgstr ""
-"Bei technischen Problemen mit der Prosignum-Plattform oder Fragen zur Swiss E-ID-Authentifizierung\n"
+"Bei technischen Problemen mit der Prosignum-Plattform oder Fragen zur Swiss "
+"E-ID-Authentifizierung\n"
 "wenden Sie sich bitte an unser technisches Support-Team."
 
+#: templates/pages/contact.html:40
 msgid "Response Time:"
 msgstr "Antwortzeit:"
 
+#: templates/pages/contact.html:40
 msgid "Within 24 hours on business days"
 msgstr "Innerhalb von 24 Stunden an Werktagen"
 
+#: templates/pages/contact.html:45
 msgid "Swiss E-ID (Swiyu) Support"
 msgstr "Swiss E-ID (Swiyu) Support"
 
+#: templates/pages/contact.html:47
+#, fuzzy
+#| msgid ""
+#| "For questions specifically about your Swiss E-ID or the Swiyu wallet "
+#| "application,\n"
+#| "please visit the official Swiyu support resources."
 msgid ""
-"For questions specifically about your Swiss E-ID or the Swiyu wallet application,\n"
-"please visit the official Swiyu support resources."
+"\n"
+"        For questions specifically about your Swiss E-ID or the Swiyu wallet "
+"application,\n"
+"        please visit the official Swiyu support resources.\n"
+"        "
 msgstr ""
 "Für Fragen speziell zu Ihrer Swiss E-ID oder der Swiyu Wallet-Applikation\n"
 "besuchen Sie bitte die offiziellen Swiyu-Support-Ressourcen."
 
+#: templates/pages/contact.html:53 templates/pages/impressum.html:25
+msgid "Website:"
+msgstr "Webseite:"
+
+#: templates/pages/contact.html:54
 msgid "Documentation:"
 msgstr "Dokumentation:"
 
+#: templates/pages/contact.html:59
 msgid "Office Hours"
 msgstr "Öffnungszeiten"
 
+#: templates/pages/contact.html:61
 msgid "Monday - Friday: 08:00 - 17:00 CET"
 msgstr "Montag - Freitag: 08:00 - 17:00 MEZ"
 
+#: templates/pages/contact.html:62
 msgid "Closed on Swiss federal holidays"
 msgstr "Geschlossen an Schweizer Bundesfeiertagen"
 
+#: templates/pages/contact.html:67
 msgid "Emergency Contact"
 msgstr "Notfallkontakt"
 
+#: templates/pages/contact.html:69
+#, fuzzy
+#| msgid ""
+#| "For urgent security issues or critical system failures, please contact "
+#| "our emergency hotline\n"
+#| "available 24/7."
 msgid ""
-"For urgent security issues or critical system failures, please contact our emergency hotline\n"
-"available 24/7."
+"\n"
+"        For urgent security issues or critical system failures, please "
+"contact our emergency hotline\n"
+"        available 24/7.\n"
+"        "
 msgstr ""
-"Bei dringenden Sicherheitsproblemen oder kritischen Systemausfällen kontaktieren Sie bitte unsere Notfall-Hotline,\n"
+"Bei dringenden Sicherheitsproblemen oder kritischen Systemausfällen "
+"kontaktieren Sie bitte unsere Notfall-Hotline,\n"
 "die rund um die Uhr erreichbar ist."
 
+#: templates/pages/contact.html:75
 msgid "Emergency Hotline:"
 msgstr "Notfall-Hotline:"
 
-# Meta descriptions
-msgid "Prosignum - Swiss Federal Government e-Signature Platform"
-msgstr "Prosignum - E-Signatur-Plattform der Schweizerischen Eidgenossenschaft"
+# Impressum page
+#: templates/pages/impressum.html:10
+msgid "Publisher and Editor"
+msgstr "Herausgeber und Redaktion"
 
-msgid "Authenticate using your Swiss E-ID to access the platform"
-msgstr "Authentifizieren Sie sich mit Ihrer Swiss E-ID, um auf die Plattform zuzugreifen"
+#: templates/pages/impressum.html:30
+msgid "Responsible for Content"
+msgstr "Verantwortlich für Inhalte"
 
-msgid "Already signed"
-msgstr "Bereits unterschrieben"
+#: templates/pages/impressum.html:33
+msgid "Bundesgasse 3"
+msgstr "Bundesgasse 3"
 
-msgid "Please enter postal code first"
-msgstr "Bitte zuerst PLZ eingeben"
+#: templates/pages/impressum.html:40
+msgid "Technical Operation"
+msgstr "Technischer Betrieb"
 
-msgid "Official Documentation"
-msgstr "Offizielle Dokumentation"
+#: templates/pages/impressum.html:42
+msgid ""
+"Federal Office of Information Technology, Systems and Telecommunication FOITT"
+msgstr "Bundesamt für Informatik und Telekommunikation BIT"
 
-msgid "Only eligible voters who are registered in a Swiss municipality and have voting rights in federal matters can sign this initiative."
-msgstr "Auf dieser Liste können nur Stimmberechtigte unterzeichnen, die in einer politischen Gemeinde in eidgenössischen Angelegenheiten stimmberechtigt sind."
+#: templates/pages/impressum.html:43
+msgid "Monbijoustrasse 74"
+msgstr "Monbijoustrasse 74"
 
-msgid "Anyone who bribes or allows themselves to be bribed in connection with a signature collection, or who falsifies the result of a signature collection for a popular initiative, is punishable under Art. 281 or Art. 282 of the Criminal Code."
-msgstr "Wer bei einer Unterschriftensammlung besticht oder sich bestechen lässt oder wer das Ergebnis einer Unterschriftensammlung für eine Volksinitiative fälscht, macht sich strafbar nach Art. 281 beziehungsweise nach Art. 282 des Strafgesetzbuches."
+#: templates/pages/impressum.html:50
+msgid "Design and Implementation"
+msgstr "Design und Umsetzung"
 
-msgid "Collection Deadline:"
-msgstr "Ablauf der Sammelfrist:"
+#: templates/pages/impressum.html:52
+msgid "Prosignum Platform"
+msgstr "Prosignum Plattform"
 
-msgid "Initiative Committee"
-msgstr "Initiativkomitee"
+#: templates/pages/impressum.html:53
+msgid "Built for e-Collecting Hackathon 2025"
+msgstr "Entwickelt für den e-Collecting Hackathon 2025"
 
-msgid "Instructions"
-msgstr "Anleitung"
+#: templates/pages/impressum.html:54
+msgid "Using Swiss Federal Government Corporate Design (CD Bund)"
+msgstr "Unter Verwendung des Corporate Designs des Bundes (CD Bund)"
 
-msgid "Open your Swiyu wallet app on your smartphone"
-msgstr "Öffnen Sie die Swiyu Wallet App auf Ihrem Smartphone"
+#: templates/pages/impressum.html:59
+msgid "Applicable Law"
+msgstr "Anwendbares Recht"
 
-msgid "Scan the QR code below"
-msgstr "Scannen Sie den QR-Code unten"
+#: templates/pages/impressum.html:61
+#, fuzzy
+#| msgid ""
+#| "This website is subject to Swiss law. The exclusive place of jurisdiction "
+#| "for all disputes arising from or\n"
+#| "in connection with this website is Bern, Switzerland."
+msgid ""
+"\n"
+"        This website is subject to Swiss law. The exclusive place of "
+"jurisdiction for all disputes arising from or\n"
+"        in connection with this website is Bern, Switzerland.\n"
+"        "
+msgstr ""
+"Diese Webseite untersteht schweizerischem Recht. Ausschliesslicher "
+"Gerichtsstand für alle Streitigkeiten aus oder\n"
+"im Zusammenhang mit dieser Webseite ist Bern, Schweiz."
 
-msgid "Approve the authentication request in the app"
-msgstr "Bestätigen Sie die Authentifizierungsanfrage in der App"
+# Legal pages
+#: templates/pages/legal.html:10
+msgid "Publisher"
+msgstr "Herausgeber"
+
+#: templates/pages/legal.html:20
+msgid "Liability"
+msgstr "Haftung"
+
+#: templates/pages/legal.html:22
+#, fuzzy
+#| msgid ""
+#| "Although the Federal Chancellery pays great attention to the accuracy of "
+#| "the information published on the Internet,\n"
+#| "it cannot accept any liability for the accuracy, correctness, "
+#| "currentness, reliability and completeness of this information."
+msgid ""
+"\n"
+"        Although the Federal Chancellery pays great attention to the "
+"accuracy of the information published on the Internet,\n"
+"        it cannot accept any liability for the accuracy, correctness, "
+"currentness, reliability and completeness of this information.\n"
+"        "
+msgstr ""
+"Die Bundeskanzlei legt grossen Wert auf die Richtigkeit der im Internet "
+"veröffentlichten Informationen,\n"
+"kann jedoch keinerlei Gewähr für die Genauigkeit, Korrektheit, Aktualität, "
+"Zuverlässigkeit und Vollständigkeit dieser Informationen übernehmen."
+
+#: templates/pages/legal.html:28
+#, fuzzy
+#| msgid ""
+#| "The Federal Chancellery expressly reserves the right to change, delete or "
+#| "temporarily not publish the contents in whole\n"
+#| "or in part at any time and without prior notice."
+msgid ""
+"\n"
+"        The Federal Chancellery expressly reserves the right to change, "
+"delete or temporarily not publish the contents in whole\n"
+"        or in part at any time and without prior notice.\n"
+"        "
+msgstr ""
+"Die Bundeskanzlei behält sich ausdrücklich vor, die Inhalte jederzeit ganz "
+"oder teilweise zu ändern, zu löschen\n"
+"oder zeitweise nicht zu veröffentlichen, und zwar ohne vorherige Ankündigung."
+
+#: templates/pages/legal.html:34
+#, fuzzy
+#| msgid ""
+#| "Liability claims regarding damage caused by the use of any information "
+#| "provided, including any kind of information\n"
+#| "which is incomplete or incorrect, will therefore be rejected."
+msgid ""
+"\n"
+"        Liability claims regarding damage caused by the use of any "
+"information provided, including any kind of information\n"
+"        which is incomplete or incorrect, will therefore be rejected.\n"
+"        "
+msgstr ""
+"Haftungsansprüche wegen Schäden, die durch die Nutzung der bereitgestellten "
+"Informationen entstanden sind,\n"
+"einschliesslich unvollständiger oder fehlerhafter Informationen, werden "
+"daher abgelehnt."
+
+#: templates/pages/legal.html:42
+msgid "References and Links"
+msgstr "Verweise und Links"
+
+#: templates/pages/legal.html:44
+#, fuzzy
+#| msgid ""
+#| "References and links to third party websites lie outside our area of "
+#| "responsibility. Access to and use of such\n"
+#| "websites occur entirely at the user's own risk. The Federal Chancellery "
+#| "explicitly states that it has no influence\n"
+#| "whatsoever on the design, content and offerings of linked sites."
+msgid ""
+"\n"
+"        References and links to third party websites lie outside our area of "
+"responsibility. Access to and use of such\n"
+"        websites occur entirely at the user's own risk. The Federal "
+"Chancellery explicitly states that it has no influence\n"
+"        whatsoever on the design, content and offerings of linked sites.\n"
+"        "
+msgstr ""
+"Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres "
+"Verantwortungsbereichs. Der Zugriff und die Nutzung solcher\n"
+"Webseiten erfolgen auf eigene Gefahr des Nutzers. Die Bundeskanzlei erklärt "
+"ausdrücklich, dass sie keinerlei Einfluss\n"
+"auf die Gestaltung, den Inhalt und die Angebote der verknüpften Seiten hat."
+
+#: templates/pages/legal.html:51
+#, fuzzy
+#| msgid ""
+#| "Information and services offered by linked sites are entirely the "
+#| "responsibility of the respective third parties.\n"
+#| "No liability can be accepted in respect of the content of such websites."
+msgid ""
+"\n"
+"        Information and services offered by linked sites are entirely the "
+"responsibility of the respective third parties.\n"
+"        No liability can be accepted in respect of the content of such "
+"websites.\n"
+"        "
+msgstr ""
+"Informationen und Dienstleistungen von verknüpften Webseiten liegen "
+"vollumfänglich in der Verantwortung der jeweiligen Dritten.\n"
+"Es wird keinerlei Haftung für den Inhalt solcher Webseiten übernommen."
+
+#: templates/pages/legal.html:59
+msgid "Data Protection"
+msgstr "Datenschutz"
+
+#: templates/pages/legal.html:61
+#, fuzzy
+#| msgid ""
+#| "Based on Article 13 of the Swiss Federal Constitution and the data "
+#| "protection provisions of the Swiss Confederation\n"
+#| "(Data Protection Act, DPA), everyone has the right to protection of their "
+#| "privacy as well as protection from misuse\n"
+#| "of their personal data."
+msgid ""
+"\n"
+"        Based on Article 13 of the Swiss Federal Constitution and the data "
+"protection provisions of the Swiss Confederation\n"
+"        (Data Protection Act, DPA), everyone has the right to protection of "
+"their privacy as well as protection from misuse\n"
+"        of their personal data.\n"
+"        "
+msgstr ""
+"Gestützt auf Artikel 13 der Schweizerischen Bundesverfassung und die "
+"datenschutzrechtlichen Bestimmungen des Bundes\n"
+"(Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer "
+"Privatsphäre sowie auf Schutz vor Missbrauch\n"
+"ihrer persönlichen Daten."
+
+#: templates/pages/legal.html:68
+#, fuzzy
+#| msgid ""
+#| "The operators of these pages take the protection of your personal data "
+#| "very seriously. We treat your personal data\n"
+#| "confidentially and in accordance with the statutory data protection "
+#| "regulations and this privacy policy."
+msgid ""
+"\n"
+"        The operators of these pages take the protection of your personal "
+"data very seriously. We treat your personal data\n"
+"        confidentially and in accordance with the statutory data protection "
+"regulations and this privacy policy.\n"
+"        "
+msgstr ""
+"Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr "
+"ernst. Wir behandeln Ihre personenbezogenen Daten\n"
+"vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie "
+"dieser Datenschutzerklärung."
+
+#: templates/pages/legal.html:76
+msgid "Copyright"
+msgstr "Urheberrecht"
+
+#: templates/pages/legal.html:78
+#, fuzzy
+#| msgid ""
+#| "Copyright, Swiss Confederation. Information on the Federal "
+#| "Administration's websites is made available to the public."
+msgid ""
+"\n"
+"        Copyright, Swiss Confederation. Information on the Federal "
+"Administration's websites is made available to the public.\n"
+"        "
+msgstr ""
+"Urheberrecht, Schweizerische Eidgenossenschaft. Informationen auf den "
+"Webseiten der Bundesverwaltung werden der Öffentlichkeit zugänglich gemacht."
+
+#: templates/pages/legal.html:83
+#, fuzzy
+#| msgid ""
+#| "Downloading or copying of texts, illustrations, photographs or other data "
+#| "does not entail any transfer of rights\n"
+#| "to the content."
+msgid ""
+"\n"
+"        Downloading or copying of texts, illustrations, photographs or other "
+"data does not entail any transfer of rights\n"
+"        to the content.\n"
+"        "
+msgstr ""
+"Das Herunterladen oder Kopieren von Texten, Illustrationen, Fotografien oder "
+"anderen Daten führt nicht zu einer Übertragung von Rechten\n"
+"an den Inhalten."
+
+#: templates/pages/legal.html:89
+#, fuzzy
+#| msgid ""
+#| "The copyright and all other rights relating to texts, illustrations, "
+#| "photographs and other data placed on the\n"
+#| "Federal Administration's websites are the exclusive property of the Swiss "
+#| "Confederation or the expressly named\n"
+#| "rights holders. Any reproduction requires the prior written consent of "
+#| "the copyright holder."
+msgid ""
+"\n"
+"        The copyright and all other rights relating to texts, illustrations, "
+"photographs and other data placed on the\n"
+"        Federal Administration's websites are the exclusive property of the "
+"Swiss Confederation or the expressly named\n"
+"        rights holders. Any reproduction requires the prior written consent "
+"of the copyright holder.\n"
+"        "
+msgstr ""
+"Das Urheberrecht und alle anderen Rechte an Texten, Illustrationen, "
+"Fotografien und anderen Daten auf den\n"
+"Webseiten der Bundesverwaltung sind ausschliessliches Eigentum der "
+"Schweizerischen Eidgenossenschaft oder der ausdrücklich genannten\n"
+"Rechtsinhaber. Jede Vervielfältigung bedarf der vorherigen schriftlichen "
+"Zustimmung des Urheberrechtsinhabers."
+
+#: venv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:153
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:775
+msgid "Enter a valid URL."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:200
+msgid "Enter a valid integer."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:211
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.12/site-packages/django/core/validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:309
+#: venv/lib/python3.12/site-packages/django/core/validators.py:318
+#: venv/lib/python3.12/site-packages/django/core/validators.py:332
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:311
+msgid "IPv4"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:320
+#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:43
+msgid "IPv6"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:334
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:514
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:366
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:405
+msgid "Enter a number."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:659
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/base.py:1600
+#: venv/lib/python3.12/site-packages/django/forms/models.py:908
+#: venv/lib/python3.12/site-packages/unfold/contrib/inlines/admin.py:108
+msgid "and"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1217
+msgid "String (unlimited)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1326
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1431
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1435
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1575
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1704
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1868
+#, fuzzy
+#| msgid "Documentation:"
+msgid "Duration"
+msgstr "Dokumentation:"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1920
+msgid "Email address"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1945
+msgid "File path"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2025
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2067
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2180
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2188
+msgid "IPv4 address"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2219
+msgid "IP address"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2310
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2364
+msgid "Positive big integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2379
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2394
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2446
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2534
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:284
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:300
+#: venv/lib/python3.12/site-packages/unfold/widgets.py:599
+#: venv/lib/python3.12/site-packages/unfold/widgets.py:644
+msgid "Time"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2642
+msgid "URL"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2666
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2733
+msgid "Universally unique identifier"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:979
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:982
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1276
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1333
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1335
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1383
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.12/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:315
+msgid "Enter a whole number."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:486
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1267
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:509
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1268
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:536
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:570
+#, fuzzy
+#| msgid "Footer navigation"
+msgid "Enter a valid duration."
+msgstr "Fussnavigation"
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:641
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:642
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:644
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:889
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:975
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:977
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1096
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1097
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1339
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1369
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.12/site-packages/django/forms/forms.py:97
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:499
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_preview.html:26
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:60
+msgid "Delete"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:527
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:528
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:529
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/edit_inline/stacked.html:57
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list_default.html:42
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/edit_inline/tabular_title.html:23
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:866
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/boolean.html:4
+#, fuzzy
+#| msgid "Unknown error"
+msgid "Unknown"
+msgstr "Unbekannter Fehler"
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:867
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:100
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:108
+msgid "Yes"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:868
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:101
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:109
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:903
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:48
+#, fuzzy
+#| msgid "Contact"
+msgid "oct"
+msgstr "Kontakt"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/text.py:287
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.12/site-packages/django/utils/text.py:306
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:353
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:68
+#: venv/lib/python3.12/site-packages/django/views/templates/directory_index.html:8
+#: venv/lib/python3.12/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:217
+#, fuzzy
+#| msgid "Documentation:"
+msgid "Django Documentation"
+msgstr "Dokumentation:"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/admin.py:45
+#: venv/lib/python3.12/site-packages/unfold/templatetags/unfold_list.py:361
+msgid "Select record"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/admin.py:194
+msgid "Select action"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/change_list.html:41
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_group.html:23
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_user.html:24
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/pagination.html:19
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:9
+msgid "Save"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:10
+msgid "Collapse"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:19
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
+msgstr "Name:"
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:20
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:176
+msgid "Value"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:21
+msgid "Default"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:22
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:59
+msgid "Code"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:23
+msgid "Modified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/constance/templates/admin/constance/includes/results_list.html:65
+msgid "Reset to default"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:23
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:77
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:90
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/dropdown_filters.py:22
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/mixins.py:45
+msgid "All"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:47
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:115
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:149
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/choice_filters.py:180
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/dropdown_filters.py:28
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/dropdown_filters.py:61
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/dropdown_filters.py:105
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/mixins.py:71
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/mixins.py:169
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/text_filters.py:29
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/admin/text_filters.py:60
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/templates/unfold/filters/filters_date_range.html:5
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/templates/unfold/filters/filters_datetime_range.html:5
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/templates/unfold/filters/filters_numeric_range.html:5
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/templates/unfold/filters/filters_numeric_single.html:5
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/templates/unfold/filters/filters_numeric_slider.html:7
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/filter.html:5
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:200
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:245
+msgid "From"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:211
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:255
+msgid "To"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:279
+msgid "Date from"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/forms.py:295
+msgid "Date to"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/filters/templates/unfold/filters/filters_numeric_slider.html:21
+msgid "Not enough data."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/array.html:30
+msgid "Add new item"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:7
+msgid "Paragraph"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:11
+msgid "Underlined"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:15
+msgid "Bold"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:19
+msgid "Italic"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:23
+msgid "Strike"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:27
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:98
+msgid "Link"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:35
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:39
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:43
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:47
+#, fuzzy
+#| msgid "Loading"
+msgid "Heading"
+msgstr "Lädt"
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:55
+msgid "Quote"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:63
+msgid "Unordered list"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:67
+msgid "Ordered list"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:71
+msgid "Indent increase"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:75
+msgid "Indent decrease"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:83
+msgid "Undo"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:87
+msgid "Redo"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:95
+msgid "Enter an URL"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/forms/templates/unfold/forms/helpers/toolbar.html:102
+msgid "Unlink"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/change_form.html:8
+msgid "Object permissions"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_group.html:13
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_user.html:14
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:9
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:43
+msgid "Object"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_group.html:16
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:15
+msgid "Group"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_user.html:17
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:33
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:15
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:33
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:14
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:30
+msgid "User"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:7
+msgid "Group permissions"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:25
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:49
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:25
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:49
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:18
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:34
+msgid "Action"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:51
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:51
+msgid "Edit"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/group_form.html:67
+msgid "Manage group"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:7
+#, fuzzy
+#| msgid "User Information"
+msgid "User permissions"
+msgstr "Benutzerinformationen"
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/guardian/templates/unfold/guardian/user_form.html:67
+msgid "Manage user"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/change_form.html:8
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/change_list_export_item.html:4
+msgid "Export"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/change_list_import_item.html:4
+msgid "Import"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/export.html:18
+#, python-format
+msgid ""
+"\n"
+"                    Export %(len)s selected item.\n"
+"                "
+msgid_plural ""
+"\n"
+"                    Export %(len)s selected items.\n"
+"                "
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/export.html:37
+msgid "This exporter will export the following fields"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/export.html:56
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_form.html:21
+msgid "Submit"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_confirm.html:10
+msgid ""
+"Below is a preview of data to be imported. If you are satisfied with the "
+"results, click 'Confirm import'"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_confirm.html:15
+msgid "Confirm import"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_errors.html:20
+msgid "Line number"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_preview.html:22
+msgid "New"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_preview.html:24
+msgid "Skipped"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_preview.html:28
+msgid "Update"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:6
+msgid "Some rows failed to validate"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:10
+msgid ""
+"Please correct these errors in your data where possible, then reupload it "
+"using the form above."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:22
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:40
+msgid "Row"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:26
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:44
+#, fuzzy
+#| msgid "Error"
+msgid "Errors"
+msgstr "Fehler"
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_validation.html:70
+msgid "Non field specific"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/resource_fields_list.html:6
+msgid "This exporter will export the following fields: "
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/import_export/templates/admin/import_export/resource_fields_list.html:8
+msgid "This importer will import the following fields: "
+msgstr ""
+
+#. Translators: Model verbose name and instance representation,
+#. suitable to be an item in a list.
+#: venv/lib/python3.12/site-packages/unfold/contrib/inlines/admin.py:99
+#, python-format
+msgid "%(class_name)s %(instance)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/inlines/admin.py:111
+#, python-format
+msgid ""
+"Deleting %(class_name)s %(instance)s would require deleting the following "
+"protected related objects: %(related_objects)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history.html:8
+msgid ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history.html:28
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:57
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history.html:32
+msgid "This object doesn't have a change history."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_form.html:16
+msgid ""
+"Press the 'Revert' button below to revert to this version of the object."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_form.html:20
+msgid "Press the 'Change History' button below to edit the history."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:19
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:55
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:10
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:26
+msgid "Date/time"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:23
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:59
+msgid "Comment"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:27
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:63
+msgid "Changed by"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:31
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:77
+msgid "Change reason"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:35
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:81
+msgid "Changes"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_list.html:73
+msgid "None"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/submit_line.html:8
+msgid "Revert"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/submit_line.html:14
+msgid "Change History"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/contrib/simple_history/templates/simple_history/submit_line.html:19
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:52
+#, fuzzy
+#| msgid "Close alert"
+msgid "Close"
+msgstr "Meldung schliessen"
+
+#: venv/lib/python3.12/site-packages/unfold/forms.py:72
+msgid "Select action to run"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/forms.py:137
+#, python-brace-format
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can change the password using <a href=\"{}\" class=\"text-"
+"primary-600 dark:text-primary-500\">this form</a>."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/mixins/base_model_admin.py:57
+#: venv/lib/python3.12/site-packages/unfold/mixins/base_model_admin.py:78
+msgid "Select value"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/actions.html:22
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/dataset_actions.html:46
+msgid "Run the selected action"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/actions.html:23
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/dataset_actions.html:47
+msgid "Run"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/actions.html:43
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/dataset_actions.html:17
+msgid "Click here to select the objects across all pages"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/actions.html:44
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/dataset_actions.html:18
+#, python-format
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/actions.html:50
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/dataset_actions.html:24
+#, fuzzy
+#| msgid "Language selection"
+msgid "Clear selection"
+msgstr "Sprachauswahl"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/app_index.html:5
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/base_site.html:3
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/index.html:5
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/login.html:15
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/layouts/base.html:7
+msgid "Django site admin"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/app_list.html:12
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list_default.html:9
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/app_list.html:48
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list.html:99
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list_default.html:59
+msgid "You don’t have permission to view or edit anything."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/auth/user/add_form.html:6
+msgid "After you've created a user, you’ll be able to edit more user options."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/auth/user/change_password.html:19
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/auth/user/change_password.html:30
+#: venv/lib/python3.12/site-packages/unfold/templates/registration/password_change_form.html:32
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/account_links.html:30
+msgid "Change password"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/change_form_object_tools.html:6
+msgid "History"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/change_form_object_tools.html:12
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/edit_inline/stacked.html:71
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/edit_inline/tabular_title.html:33
+msgid "View on site"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/change_list.html:69
+msgid "Filters"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/change_list_results.html:33
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/components/table.html:34
+msgid "Expand row"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_confirmation.html:16
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_confirmation.html:32
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_confirmation.html:48
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_confirmation.html:55
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_selected_confirmation.html:49
+msgid "Objects"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_selected_confirmation.html:15
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_selected_confirmation.html:28
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/delete_selected_confirmation.html:42
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/edit_inline/stacked.html:59
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list_default.html:38
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/edit_inline/tabular_title.html:25
+msgid "View"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/includes/object_delete_summary.html:5
+msgid "Summary"
+msgstr ""
+
+# User interface
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/login.html:15
+#, fuzzy
+#| msgid "Welcome back!"
+msgid "Welcome back to"
+msgstr "Willkommen zurück!"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/login.html:26
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/login.html:47
+msgid "Log in"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/login.html:55
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/object_history.html:60
+msgid ""
+"This object doesn’t have a change history. It probably wasn’t added via this "
+"admin site."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/pagination.html:12
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/popup_header.html:14
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/welcomemsg.html:25
+msgid "Show all"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/search_form.html:18
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/command.html:24
+#, fuzzy
+#| msgid "Type to search municipality..."
+msgid "Type to search"
+msgstr "Tippen um Gemeinde zu suchen..."
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:28
+msgid "Save and continue editing"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:30
+msgid "Save and view"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:37
+msgid "Save and add another"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/admin/submit_line.html:43
+msgid "Save as new"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/registration/logged_out.html:14
+msgid "You have been successfully logged out from the administration"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/registration/logged_out.html:18
+msgid "Thanks for spending some quality time with the web site today."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/registration/logged_out.html:23
+#, fuzzy
+#| msgid "to try again."
+msgid "Log in again"
+msgstr "um es erneut zu versuchen."
+
+#: venv/lib/python3.12/site-packages/unfold/templates/registration/password_change_done.html:8
+msgid "Your password was changed."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/registration/password_change_form.html:18
+msgid ""
+"Please enter your old password, for security’s sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/components/table.html:89
+msgid "No data"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/account_links.html:17
+msgid "View site"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/account_links.html:40
+msgid "Log out"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/actions_row.html:4
+msgid "More actions"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/add_link.html:5
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/add_link.html:8
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/empty_results.html:4
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list.html:68
+msgid "All applications"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/app_list_default.html:31
+msgid "Add"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/boolean.html:4
+msgid "True"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/boolean.html:4
+msgid "False"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_filter_actions.html:7
+msgid "Apply Filters"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_filter_actions.html:16
+msgid "Hide counts"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_filter_actions.html:20
+msgid "Show counts"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_filter_actions.html:27
+msgid "Clear all filters"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_headers.html:27
+msgid "Select all rows"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_headers.html:41
+msgid "Toggle sorting"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_headers.html:49
+msgid "Remove from sorting"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/change_list_headers.html:55
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/command_history.html:7
+msgid "Recent searches"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/command_history.html:49
+msgid "No recent searches"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/command_results.html:44
+msgid "No results matching your query"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/command_results.html:57
+msgid "Loading more results..."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/command_results.html:62
+#, python-format
+msgid ""
+"\n"
+"                Found %(counter)s result in %(time)s seconds\n"
+"            "
+msgid_plural ""
+"\n"
+"                Found %(counter)s results in %(time)s seconds\n"
+"            "
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/delete_submit_line.html:5
+msgid "No, take me back"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/delete_submit_line.html:9
+msgid "Yes, I’m sure"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/display_header.html:10
+msgid "Record picture"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/edit_inline/tabular_delete.html:4
+msgid "Remove"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/edit_inline/tabular_heading.html:21
+msgid "Delete?"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/empty_results.html:14
+msgid "No results found"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/empty_results.html:18
+msgid ""
+"This page yielded into no results. Create a new item or reset your filters."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/empty_results.html:32
+msgid "Reset filters"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/field_readonly_value_file.html:8
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/clearable_file_input.html:6
+msgid "Image preview"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/field_readonly_value_file.html:13
+msgid "Click to download"
+msgstr ""
+
+# User interface
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/header_back_button.html:7
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/header_back_button.html:15
+#, fuzzy
+#| msgid "Welcome back!"
+msgid "Go back"
+msgstr "Willkommen zurück!"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/history.html:9
+#, fuzzy
+#| msgid "Documentation:"
+msgid "Recent actions"
+msgstr "Dokumentation:"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/history.html:28
+#, fuzzy
+#| msgid "Unknown error"
+msgid "Unknown content"
+msgstr "Unbekannter Fehler"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/messages/errornote.html:5
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/pagination_infinite.html:5
+msgid "Previous"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/pagination_infinite.html:9
+msgid "Next"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/popup_header.html:14
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/welcomemsg.html:25
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/popup_header.html:14
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/welcomemsg.html:25
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/search.html:10
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/search.html:40
+msgid "Search apps and models..."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/search.html:41
+#, fuzzy
+#| msgid "Footer navigation"
+msgid "Filter navigation items"
+msgstr "Fussnavigation"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_branding.html:3
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/site_branding.html:6
+#, fuzzy
+#| msgid "Administration Access"
+msgid "Django administration"
+msgstr "Verwaltungszugang"
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/tab_items.html:15
+msgid "General"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/theme_switch.html:16
+msgid "Dark"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/theme_switch.html:23
+msgid "Light"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/theme_switch.html:30
+msgid "System"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/helpers/unauthenticated_header.html:6
+msgid "Return to site"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/clearable_file_input.html:24
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/clearable_file_input_small.html:17
+msgid "Choose file to upload"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/related_widget_wrapper.html:16
+#, python-format
+msgid "Change selected %(model)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/related_widget_wrapper.html:26
+#, python-format
+msgid "Add another %(model)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/related_widget_wrapper.html:35
+#, python-format
+msgid "View selected %(model)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold/widgets/related_widget_wrapper.html:45
+#, python-format
+msgid "Delete selected %(model)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/templates/unfold_crispy/layout/table_inline_formset.html:65
+msgid "Add row"
+msgstr ""
+
+# User interface
+#: venv/lib/python3.12/site-packages/unfold/templatetags/unfold.py:705
+#, fuzzy
+#| msgid "Welcome back!"
+msgid "Welcome"
+msgstr "Willkommen zurück!"
+
+#: venv/lib/python3.12/site-packages/unfold/templatetags/unfold_list.py:132
+msgid "Select all objects on this page for an action"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/widgets.py:598
+#: venv/lib/python3.12/site-packages/unfold/widgets.py:639
+msgid "Date"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/unfold/widgets.py:821
+#, fuzzy
+#| msgid "Select your municipality"
+msgid "Select currency"
+msgstr "Wählen Sie Ihre Gemeinde"
+
+#~ msgid "Swiyu Login"
+#~ msgstr "Swiyu Anmeldung"
+
+#~ msgid "Municipality"
+#~ msgstr "Gemeinde"
+
+#~ msgid "Bundeskanzlei | Prosignum"
+#~ msgstr "Bundeskanzlei | Prosignum"
+
+#~ msgid "Birth Place:"
+#~ msgstr "Geburtsort:"
+
+#~ msgid "Go to Admin Panel"
+#~ msgstr "Zum Admin-Bereich"
+
+# Prosignum specific
+#~ msgid "Prosignum"
+#~ msgstr "Prosignum"
+
+#~ msgid "Secure, federated signature collection for Swiss e-democracy"
+#~ msgstr ""
+#~ "Sichere, föderierte Unterschriftensammlung für die Schweizer E-Demokratie"
+
+#~ msgid "Please authenticate using your Swiss E-ID to access the platform."
+#~ msgstr ""
+#~ "Bitte authentifizieren Sie sich mit Ihrer Swiss E-ID, um auf die "
+#~ "Plattform zuzugreifen."
+
+#~ msgid "Platform Features"
+#~ msgstr "Plattform-Funktionen"
+
+#~ msgid "Initiative Management"
+#~ msgstr "Initiativen-Verwaltung"
+
+#~ msgid ""
+#~ "Create and manage referendum initiatives with full lifecycle tracking"
+#~ msgstr ""
+#~ "Erstellen und verwalten Sie Volksinitiativen mit vollständiger "
+#~ "Lebenszyklus-Verfolgung"
+
+#~ msgid "Digital Signatures"
+#~ msgstr "Digitale Unterschriften"
+
+#~ msgid ""
+#~ "Collect signatures with Swiss E-ID authentication and municipality "
+#~ "verification"
+#~ msgstr ""
+#~ "Sammeln Sie Unterschriften mit Swiss E-ID-Authentifizierung und Gemeinde-"
+#~ "Verifizierung"
+
+#~ msgid "Municipality Review"
+#~ msgstr "Gemeinde-Prüfung"
+
+#~ msgid "Municipality-based review workflow with accept/reject capabilities"
+#~ msgstr "Gemeindebasierter Prüfungsablauf mit Annahme-/Ablehnungsfunktion"
+
+#~ msgid "Statistics & Reports"
+#~ msgstr "Statistiken & Berichte"
+
+#~ msgid "View signature totals by municipality while maintaining privacy"
+#~ msgstr ""
+#~ "Zeigen Sie Unterschriften-Totale nach Gemeinde an und wahren Sie dabei "
+#~ "die Privatsphäre"
+
+#~ msgid "Powered by Swiyu Swiss E-ID | Built for e-Collecting Hackathon 2025"
+#~ msgstr ""
+#~ "Betrieben mit Swiyu Swiss E-ID | Entwickelt für den e-Collecting "
+#~ "Hackathon 2025"
+
+#~ msgid ""
+#~ "Instructions: 1. Open your Swiyu wallet app on your smartphone, 2. Scan "
+#~ "the QR code below, 3. Approve the authentication request in the app"
+#~ msgstr ""
+#~ "Anleitung: 1. Öffnen Sie die Swiyu Wallet App auf Ihrem Smartphone, 2. "
+#~ "Scannen Sie den QR-Code unten, 3. Bestätigen Sie die "
+#~ "Authentifizierungsanfrage in der App"

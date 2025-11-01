@@ -3,6 +3,9 @@ from django.utils import timezone
 from django.db.models import Count, Q
 from unfold.admin import ModelAdmin
 from .models import Municipality, Initiative, Participant, Signature
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 @admin.register(Municipality)
@@ -27,7 +30,7 @@ class MunicipalityAdmin(ModelAdmin):
 
 @admin.register(Initiative)
 class InitiativeAdmin(ModelAdmin):
-    list_display = ['title', 'status', 'creator', 'created_at', 'total_signatures', 'get_progress']
+    list_display = ['title', 'status', 'creator', 'created_at', 'total_signatures', 'pending_signatures', 'get_progress']
     list_filter = ['status', 'created_at']
     search_fields = ['title', 'description']
     readonly_fields = ['created_at', 'updated_at', 'total_signatures', 'get_progress', 'signatures_by_municipality']
@@ -52,21 +55,18 @@ class InitiativeAdmin(ModelAdmin):
         qs = super().get_queryset(request)
         if request.user.is_superuser:
             return qs
-        # Initiative creators only see their own initiatives
-        if request.user.has_perm('core.can_create_initiative'):
-            return qs.filter(creator=request.user)
+        # Users with view permission can see initiatives
+        if request.user.has_perm('core.view_initiative'):
+            return qs
         return qs.none()
 
     def has_add_permission(self, request):
-        # Only users with can_create_initiative permission
-        return request.user.has_perm('core.can_create_initiative')
+        # Only superusers can add initiatives
+        return request.user.is_superuser
 
     def has_change_permission(self, request, obj=None):
-        if request.user.is_superuser:
-            return True
-        if obj and obj.creator == request.user:
-            return True
-        return False
+        # Only superusers can change initiatives
+        return request.user.is_superuser
 
     def has_delete_permission(self, request, obj=None):
         # Only superusers can delete
@@ -80,6 +80,10 @@ class InitiativeAdmin(ModelAdmin):
     def total_signatures(self, obj):
         return obj.get_total_signatures()
     total_signatures.short_description = 'Total Accepted Signatures'
+
+    def pending_signatures(self, obj):
+        return obj.signatures.filter(status='pending').count()
+    pending_signatures.short_description = 'Total Pending'
 
     def get_progress(self, obj):
         percentage = obj.get_progress_percentage()
@@ -159,17 +163,18 @@ class SignatureAdmin(ModelAdmin):
         if request.user.has_perm('core.can_review_signatures'):
             # Get municipalities this user can review (based on group membership)
             user_groups = request.user.groups.values_list('name', flat=True)
-            reviewer_municipalities = []
 
+            # Build case-insensitive query for municipalities
+            q = Q()
             for group_name in user_groups:
-                if group_name.startswith('Municipality_') and group_name.endswith('_Reviewers'):
+                if group_name.startswith('municipality_'):
                     # Extract municipality name from group name
-                    # Format: Municipality_{name}_Reviewers
-                    mun_name = group_name[13:-10]  # Remove prefix and suffix
-                    reviewer_municipalities.append(mun_name)
+                    # Format: municipality_{name} (created by signal in models.py)
+                    mun_name = group_name[13:].replace('_', ' ')  # Remove prefix, restore spaces
+                    q |= Q(municipality__name__iexact=mun_name)
 
-            if reviewer_municipalities:
-                return qs.filter(municipality__name__in=reviewer_municipalities)
+            if q:
+                return qs.filter(q)
 
         return qs.none()
 
@@ -185,9 +190,9 @@ class SignatureAdmin(ModelAdmin):
         if request.user.has_perm('core.can_review_signatures') and obj:
             user_groups = request.user.groups.values_list('name', flat=True)
             for group_name in user_groups:
-                if group_name.startswith('Municipality_') and group_name.endswith('_Reviewers'):
-                    mun_name = group_name[13:-10]
-                    if obj.municipality.name == mun_name:
+                if group_name.startswith('municipality_'):
+                    mun_name = group_name[13:].replace('_', ' ')  # Remove prefix, restore spaces
+                    if obj.municipality.name.lower() == mun_name.lower():
                         return True
 
         return False
