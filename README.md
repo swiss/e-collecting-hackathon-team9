@@ -3,7 +3,7 @@
 ## Approach
 Prosignum ist ein **föderal funktionsfähiges, datenschutzwahrendes und kryptografisch verifizierbares System zur elektronischen Unterschriftensammlung**. 
 Es kann parallel zum Papierkanal betrieben werden.
-Wir legen dabei besonderen Wert auf Sicherheit, Privatsphäre, Verifizierbarkeit, und föderale Anschlussfähigkeit. 
+Wir legen dabei besonderen Wert auf Sicherheit, Privatsphäre, Verifizierbarkeit, und föderale Anschlussfähigkeit[^2][^3]. 
 
 ### Designprinzipien
 - **Sicherheitsorientiertes Design**: Wir möchten jeden Schritt auf Bedrohungen analysieren und diese bewusst dokumentieren, damit Trade-offs, Vertrauensannahmen sowie Vertrauensgrenzen klar dokumentiert sind.
@@ -27,7 +27,7 @@ Die folgenden Phasen skizzieren wie eine schrittweise Weiterentwicklung des E-Co
 #### **Phase 2: Erweiterte Sicherheit**
 - **Fokus**: Verbesserte kryptografische Verfahren
 - **Potenzielle Features**:
-  - Potenzielle Erweiterung durch Schema aus [[1]](https://github.com/swiss/e-collecting-hackathon-team9/tree/main?tab=readme-ov-file#references)
+  - Potenzielle Erweiterung durch Schema aus[^1]
   - Zero-Knowledge-Proofs (ZKP) für Stimmberechtigung
   - Verteilte Verifizierung durch mehrere Stimmregister
   - Anonymisierte Zwischenstände
@@ -145,8 +145,8 @@ This software is licensed under a AGPL 3.0 License - see the [LICENSE](LICENSE) 
 
 ## References
 
-[1] Moser, Florian (2025). E-Collecting in Switzerland: Status Quo, Setting & Proposals. Document prepared for the E-Collecting Hackathon organized by the Federal Chancellery of Switzerland, 31.10.-01.11.2025. With feedback contributions from Christian Killer, Audhild (INRIA Nancy), and E-Voting BFH.
+[^1]: Moser, Florian (2025). E-Collecting in Switzerland: Status Quo, Setting & Proposals. Document prepared for the E-Collecting Hackathon organized by the Federal Chancellery of Switzerland, 31.10.-01.11.2025. With feedback contributions from Christian Killer, Audhild (INRIA Nancy), and E-Voting BFH. Available at: [Link](https://github.com/swiss/e-collecting-hackathon-team9/blob/main/docs/references/moser_2025.pdf)
 
-[2] Gfeller, Katja, Andreas Glaser, and Irina Lehner (2021). "E-Collecting: Umsetzungsvarianten und Rechtsetzungsbedarf" [E-Collecting: Implementation Variants and Legislative Requirements]. LeGes – Gesetzgebung & Evaluation, 32(1), 1–15. Available at: https://leges.weblaw.ch/legesissues/2021/1/e-collecting--umsetz_4ac1c3bc14.html
+[^2]: Gfeller, Katja, Andreas Glaser, and Irina Lehner (2021). "E-Collecting: Umsetzungsvarianten und Rechtsetzungsbedarf" [E-Collecting: Implementation Variants and Legislative Requirements]. LeGes – Gesetzgebung & Evaluation, 32(1), 1–15. Available at: https://leges.weblaw.ch/legesissues/2021/1/e-collecting--umsetz_4ac1c3bc14.html
 
-[3] Bühlmann, Marc and Hans-Peter Schaub (2023). Staatspolitische Auswirkungen von E-Collecting: Studie im Auftrag der Bundeskanzlei [Political Impacts of E-Collecting: Study Commissioned by the Federal Chancellery]. Bern: Année Politique Suisse, Institut für Politikwissenschaft, Universität Bern. Available at: https://www.newsd.admin.ch/newsd/message/attachments/90666.pdf
+[^3]: Bühlmann, Marc and Hans-Peter Schaub (2023). Staatspolitische Auswirkungen von E-Collecting: Studie im Auftrag der Bundeskanzlei [Political Impacts of E-Collecting: Study Commissioned by the Federal Chancellery]. Bern: Année Politique Suisse, Institut für Politikwissenschaft, Universität Bern. Available at: https://www.newsd.admin.ch/newsd/message/attachments/90666.pdf
