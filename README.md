@@ -89,9 +89,9 @@ sequenceDiagram
     App->>V: Authentifizierung & Signatur
     V->>EC: Signierte Unterstützungsbekundung einreichen
     EC->>ER: Stimmberechtigung prüfen
-    ER-->>EC: gültig
-    EC-->>V: Bestätigung mit Quittung
-    EC-->>CC: Aggregierte Zähler pro Gemeinde
+    ER->>EC: gültig
+    EC->>V: Bestätigung mit Quittung
+    EC->>CC: Aggregierte Zähler pro Gemeinde
 ```
 
 ## User Experience

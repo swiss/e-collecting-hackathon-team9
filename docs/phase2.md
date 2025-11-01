@@ -2,6 +2,27 @@
 This document contains drafts and process diagrams that outline potential solutions for Phase 2, which basically applies the scheme proposed in[^1].
 
 ## TODO add content here
+We try to make a progressive update from phase 1 so that there is no sudden jump from simple to complex model. The minimal sequence diagram for phase 2 based on the phase 1 is:
+```mermaid
+sequenceDiagram
+    participant V as Stimmberechtigte (Voter)
+    participant App as E-ID App Swiyu
+    participant EC as E-Collecting (Bundeskanzlei)
+    participant ER as Stimmregister (Gemeinde)
+    participant CC as Komitee (Initiative)
+
+    V->>App: QR or Deep-Link open
+    App->>V: Auth OK + user_sig = Sign(sk, initiative_id)
+    V->>EC: {pk, user_sig, initiative_id}
+    EC->>EC: Verify(user_sig, pk, initiative_id)
+    EC->>ER: Check pk (whitelist, no duplicate)
+    ER->>EC: eligible
+    EC->>V: receipt = Sign_EC(pk, initiative_id, ts)
+    EC->>CC: Aggregated counters (no identities)
+
+```
+
+Here is the experimental exploration of the more concrete version of protocol:
 ```mermaid
 sequenceDiagram
     participant V as Voter
@@ -25,7 +46,7 @@ sequenceDiagram
         ER-->>EC: Confirm eligible
 
         EC->>TR: Forward signature batch & whitelist for audit
-        TR-->>EC: Verify validity & uniqueness, sign audit proof
+        TR->>EC: Verify validity & uniqueness, sign audit proof
     Note over EC,ER: ⚠️ Blacklist Update
     EC->>ER: Notify (pk, initiative_id) marked as used (signature accepted)
     ER->>ER: Update signed_flag=1 (blacklist voter)
@@ -35,7 +56,7 @@ sequenceDiagram
     Note over V,TR: 🧮 Publication & Audit
     EC->>V: Publish timestamp & receipt (Participation-as-Recorded)
     TR->>EC: Periodic audit → cross-check EC logs vs ER whitelist
-    TR-->>EC: Signed audit statement (Counted-as-Recorded)
+    TR->>EC: Signed audit statement (Counted-as-Recorded)
     EC->>V: Publish aggregated audit proofs & counts
 
 ```
