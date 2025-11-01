@@ -61,5 +61,36 @@ sequenceDiagram
 
 ```
 
+## Strengths and Weaknesses
+
+
+
+
+### Strengths
+
+**Clear roles.** App = auth+sign, EC = intake+receipt+counts, ER = eligibility, CC = informed — easy to build and explain.
+
+**Real-time eligibility.** EC→ER check blocks most bogus submissions early.
+
+**User receipt.** “Bestätigung/Quittung” lets people know they were counted and supports disputes.
+
+**Authentication delegated to Swiyu**. no reimplementation of authentication, increase security. Swiyu can set the expiration date of public key and ask voters to reagree on new key pairs after expiration.
+
+**Committee accessibility.** Committee will be informed of the result
+
+
+
+
+
+### Weaknesses
+
+**No theoretic proof of security of the protocol.** 
+
+**Linkability & privacy.** Reusing a stable ID/key across initiatives lets others profile a voter’s interests.
+
+**Single point of trust.** EC/ER are central; there’s no independent audit trail or multi-party attestation.
+
+
+
 # References
 [^1]: Moser, Florian (2025). E-Collecting in Switzerland: Status Quo, Setting & Proposals. Document prepared for the E-Collecting Hackathon organized by the Federal Chancellery of Switzerland, 31.10.-01.11.2025. With feedback contributions from Christian Killer, Audhild (INRIA Nancy), and E-Voting BFH. Available at: [Link](https://github.com/swiss/e-collecting-hackathon-team9/blob/main/docs/references/moser_2025.pdf)
