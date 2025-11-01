@@ -27,11 +27,11 @@ Die folgenden Phasen skizzieren wie eine schrittweise Weiterentwicklung des E-Co
 #### **Phase 2: Erweiterte Sicherheit**
 - **Fokus**: Verbesserte kryptografische Verfahren
 - **Potenzielle Features**:
-  - Potenzielle Erweiterung durch Schema aus[^1]
+  - Potenzielle Erweiterung durch Schema aus[^1], [Draft Idea here](/docs/phase2.md)
   - Zero-Knowledge-Proofs (ZKP) für Stimmberechtigung
   - Verteilte Verifizierung durch mehrere Stimmregister
   - Anonymisierte Zwischenstände
-  - Post-Quantum-sichere Kryptographieverfahren
+  - Post-Quantum-sichere Kryptographieverfahren 
 
 #### **Phase 3: Vollständige Privacy-Implementierung**
 - **Fokus**: Maximaler Datenschutz mit Differential Privacy
